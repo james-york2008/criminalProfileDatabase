@@ -3,28 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criminal Profile Database</title>
-    <link rel="stylesheet" type="text/css" href="css/index-style.css">
+    <title>ITAB Criminal Profile Database</title>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="src/index/navbar.css">
+    <link rel="stylesheet" type="text/css" href="src/index/search.css">
 </head>
 <body>
     <main>
-        <h1>Criminal Profile Database</h1>
-        <figure>
-            <img src="images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo">
-        </figure>
-            <section class="intro">
-            <p>This database contains dossiers of high-risk subjects currently under surveillance.     Click a subject's name to view their full profile and threat assessment.</p>
-        </section>
-            <section class="character-links">
-            <ul id="main-links-list">
-                <li><a href="character-information/lyra.html">Lyra Moonshard</a></li>
-                <li><a href="character-information/drazik.html">Drazik Voidcleaver</a></li>
-                <li><a href="character-information/seraphine.html">Seraphine Emberveil</a></li>
-            </ul>
+        <div class="blueBackground">
+            <nav id="home">
+                <div id="titleWrapper">
+                    <img src="images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo" class="itabLogo">
+                    <h1>Interdimensional Threat Analysis Bureau</h1>
+                    <button id="dropdownButton">☰</button>
+                </div>
+
+                <ul class="d-none" id="navList">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#cases">Cases</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section id="criminalProfiles">
+            <h2>Criminal Profiles</h2>
+            <form id="searchBar">
+                <input placeholder="Search by name, or alias" type="text">
+                <button>Search</button>
+                <fieldset>
+                    <legend>Filter by status: 
+                        <select name="threatLevel">
+                            <option>All threat levels</option>
+                            <option>Low risk</option>
+                            <option>Moderate risk</option>
+                            <option>Severe threat</option>
+                        </select>
+
+                        <select name="status">
+                            <option>Most wanted</option>
+                            <option>Captured</option>
+                            <option>Under surveillance</option>
+                        </select>
+                    </legend>
+                </fieldset>
+            </form>
+
+            <div id="profileCards">
+                <article>
+                    <img src="images/lyra.png" alt="Mugshot of Lyra Moonshard">
+                    <h3>Lyra Moonshard</h3>
+                    <p>Alias: The Rift Walker</p>
+                    <p>Threat: Severe Risk</p>
+                    <p>Status: Unknown Whereabouts</p>
+                    <button>View Full Report</button>
+                </article>
+
+                <article>
+                    <img src="images/drazik.png" alt="Musgshot of Drazik Voidcleaver">
+                    <h3>Drazik Voidcleaver</h3>
+                    <p>Alias: The Abyssal Executioner</p>
+                    <p>Threat: Severe Threat</p>
+                    <p>Status: Unknown Whereabouts</p>
+                    <button>View Full Report</button>
+                </article>
+
+                <article>
+                    <img src="images/seraphine.png" alt="Mugshot of Seraphine Emberveil">
+                    <h3>Seraphine Emberveil</h3>
+                    <p>ALias: The Ashen Empress</p>
+                    <p>Threat: Severe Threat</p>
+                    <p>Status: Unknown Whereabouts</p>
+                    <button>View Full Report</button>
+                </article>
+            </div>
         </section>
     </main>
-<footer>
-    <p>Interdimensional Threat Analysis Bureau &copy;</p>
-</footer>
+
+    <footer>
+        <a href="#"><small>PRIVACY POLICY |</small></a>
+        <a href="#"><small>TERMS OF USE</small></a>
+
+        <p><small>&copy; 2026</small></p>
+    </footer>
+
+    <script src="src/index/hamburgerMenu.js"></script>
 </body>
 </html>
