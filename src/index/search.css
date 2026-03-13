@@ -1,0 +1,51 @@
+#criminalProfiles {
+    text-align: center;
+}
+
+#criminalProfiles h2 {
+    font-size: 1.3rem;
+}
+
+#criminalProfiles input {
+    width: 50%;
+    line-height: 1.3rem;
+}
+
+#search {
+    width: 20%;
+    line-height: 1.3rem;
+    background-color: rgb(8, 45, 73);
+    color: rgb(212, 175, 55);
+    outline: 2px solid rgb(212, 175, 55);
+}
+
+#criminalProfiles fieldset {
+    margin-top: 20px;
+    
+}
+
+#criminalProfiles legend {
+    font-size: 0.8rem;
+}
+
+fieldset {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+@media (min-width: 540px) {
+    #criminalProfiles input {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    #search {
+        width: 10%;
+    }
+
+    #criminalProfiles h2 {
+        font-size: 1.7rem;
+    }
+}

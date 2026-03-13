@@ -1,9 +1,3 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Public-Sans";
-}
-
 .itabLogo {
     width: 100px;
     border-radius: 50%;
@@ -20,6 +14,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    justify-content: space-between;
 }
 
 #titleWrapper h1 {
@@ -32,17 +27,16 @@ body {
 
 .d-none {
     max-height: 0;
-    pointer-events: none;
 }
 
 .d-show {
     max-height: 500px;
-    pointer-events: auto;
 }
 
 #dropdownButton {
     margin: 1rem;
     font-size: 1.3rem;
+    border-radius: 5px;
 }
 
 #navList {
@@ -51,6 +45,10 @@ body {
     background-color: white;
     transition: all 0.3s ease;
     overflow: hidden;
+}
+
+#desktopNavList {
+    display: none;
 }
 
 #navList a {
@@ -62,8 +60,40 @@ body {
     text-decoration: none;
 }
 
-/*#navList {
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
-}*/
+@media (min-width: 540px) {
+    #titleWrapper h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (min-width: 700px) {
+    #titleWrapper button {
+        display: none;
+    }
+
+    #desktopNavList {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+
+    #desktopNavList li a {
+        color: rgb(212, 175, 55);
+    }
+
+    #desktopNavList li a:hover {
+        color: orangered;
+    }
+}
+
+@media (min-width: 992px) {
+    #titleWrapper h1 {
+        font-size: 2.3rem;
+    }
+
+    .itabLogo {
+        width: 150px;
+    }
+}

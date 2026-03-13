@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITAB Criminal Profile Database</title>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="src/index/base.css">
     <link rel="stylesheet" type="text/css" href="src/index/navbar.css">
     <link rel="stylesheet" type="text/css" href="src/index/search.css">
+    <link rel="stylesheet" type="text/css" href="src/index/characterProfiles.css">
+    <link rel="stylesheet" type="text/css" href="src/index/footer.css">
 </head>
 <body>
     <main>
@@ -16,13 +19,17 @@
                     <img src="images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo" class="itabLogo">
                     <h1>Interdimensional Threat Analysis Bureau</h1>
                     <button id="dropdownButton">☰</button>
+                    <ul id="desktopNavList">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#criminalProfiles">Cases</a></li>
+                        <li><a href="#legal">Legal</a></li>
+                    </ul>
                 </div>
 
                 <ul class="d-none" id="navList">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#cases">Cases</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#criminalProfiles">Cases</a></li>
+                    <li><a href="#legal">Legal</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,62 +37,54 @@
         <section id="criminalProfiles">
             <h2>Criminal Profiles</h2>
             <form id="searchBar">
-                <input placeholder="Search by name, or alias" type="text">
-                <button>Search</button>
+                <label for="searchInput">Search Profiles</label>
+                <input id="searchInput" placeholder="Search by name, or alias" type="text">
+                <button type="submit" id="search">Search</button>
                 <fieldset>
-                    <legend>Filter by status: 
-                        <select name="threatLevel">
-                            <option>All threat levels</option>
-                            <option>Low risk</option>
-                            <option>Moderate risk</option>
-                            <option>Severe threat</option>
-                        </select>
+                    <legend>FILTER BY STATUS:</legend>
+                    <select name="threatLevel">
+                        <option>All threat levels</option>
+                        <option>Low risk</option>
+                        <option>Moderate risk</option>
+                        <option>Severe threat</option>
+                    </select>
 
-                        <select name="status">
-                            <option>Most wanted</option>
-                            <option>Captured</option>
-                            <option>Under surveillance</option>
-                        </select>
-                    </legend>
+                    <select name="status">
+                        <option>Most wanted</option>
+                        <option>Captured</option>
+                        <option>Under surveillance</option>
+                    </select>
                 </fieldset>
             </form>
 
             <div id="profileCards">
-                <article>
-                    <img src="images/lyra.png" alt="Mugshot of Lyra Moonshard">
+                <article class="profileCard">
+                    <a href="character-information/lyra.html"><img class="profileImage" src="images/lyra.png" alt="Mugshot of Lyra Moonshard"></a>
                     <h3>Lyra Moonshard</h3>
                     <p>Alias: The Rift Walker</p>
                     <p>Threat: Severe Risk</p>
                     <p>Status: Unknown Whereabouts</p>
-                    <button>View Full Report</button>
+                    <a href="character-information/lyra.html" class="button">View Full Report</a>
                 </article>
 
-                <article>
-                    <img src="images/drazik.png" alt="Musgshot of Drazik Voidcleaver">
-                    <h3>Drazik Voidcleaver</h3>
-                    <p>Alias: The Abyssal Executioner</p>
-                    <p>Threat: Severe Threat</p>
-                    <p>Status: Unknown Whereabouts</p>
-                    <button>View Full Report</button>
-                </article>
-
-                <article>
-                    <img src="images/seraphine.png" alt="Mugshot of Seraphine Emberveil">
+                <article class="profileCard">
+                    <a href="character-information/seraphine.html"><img class="profileImage" src="images/seraphine.png" alt="Mugshot of Seraphine Emberveil"></a>
                     <h3>Seraphine Emberveil</h3>
-                    <p>ALias: The Ashen Empress</p>
+                    <p>Alias: The Ashen Empress</p>
                     <p>Threat: Severe Threat</p>
                     <p>Status: Unknown Whereabouts</p>
-                    <button>View Full Report</button>
+                    <a href="character-information/seraphine.html" class="button">View Full Report</a>
                 </article>
             </div>
         </section>
     </main>
 
-    <footer>
-        <a href="#"><small>PRIVACY POLICY |</small></a>
-        <a href="#"><small>TERMS OF USE</small></a>
+    <footer id="legal">
+        <a href="#" class="footerLinks">PRIVACY POLICY</a>
+        <a href="#" class="footerLinks">TERMS OF USE</a>
+        <a href="#home" class="footerLinks">BACK TO TOP</a>
 
-        <p><small>&copy; 2026</small></p>
+        <p><small id="copyrightTag">&copy; iTab 2026</small></p>
     </footer>
 
     <script src="src/index/hamburgerMenu.js"></script>
