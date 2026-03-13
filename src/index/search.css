@@ -11,6 +11,10 @@
     line-height: 1.3rem;
 }
 
+#searchProfilesLabel {
+    display: none;
+}
+
 #search {
     width: 20%;
     line-height: 1.3rem;

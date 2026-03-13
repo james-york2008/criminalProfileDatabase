@@ -16,7 +16,7 @@
         <div class="blueBackground">
             <nav id="home">
                 <div id="titleWrapper">
-                    <img src="images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo" class="itabLogo">
+                    <a href="index.html"><img src="images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo" class="itabLogo"></a>
                     <h1>Interdimensional Threat Analysis Bureau</h1>
                     <button id="dropdownButton">☰</button>
                     <ul id="desktopNavList">
@@ -37,42 +37,43 @@
         <section id="criminalProfiles">
             <h2>Criminal Profiles</h2>
             <form id="searchBar">
-                <label for="searchInput">Search Profiles</label>
+                <label id="searchProfilesLabel" for="searchInput">Search Profiles</label>
                 <input id="searchInput" placeholder="Search by name, or alias" type="text">
                 <button type="submit" id="search">Search</button>
                 <fieldset>
                     <legend>FILTER BY STATUS:</legend>
-                    <select name="threatLevel">
-                        <option>All threat levels</option>
-                        <option>Low risk</option>
-                        <option>Moderate risk</option>
-                        <option>Severe threat</option>
+                    <select name="threatLevel" id="threatLevel">
+                        <option value="all">All threat levels</option>
+                        <option value="1">Low risk</option>
+                        <option value="2">Moderate risk</option>
+                        <option value="3">Severe threat</option>
                     </select>
 
-                    <select name="status">
-                        <option>Most wanted</option>
-                        <option>Captured</option>
-                        <option>Under surveillance</option>
+                    <select name="status" id="status">
+                        <option value="all">All status</option>
+                        <option value="mostWanted">Most wanted</option>
+                        <option value="captured">Captured</option>
+                        <option value="underSurveillance">Under surveillance</option>
                     </select>
                 </fieldset>
             </form>
 
             <div id="profileCards">
-                <article class="profileCard">
-                    <a href="character-information/lyra.html"><img class="profileImage" src="images/lyra.png" alt="Mugshot of Lyra Moonshard"></a>
-                    <h3>Lyra Moonshard</h3>
+                <article class="profileCard" data-threat="3" data-status="mostWanted" data-search="lyra moonshard rift walker">
+                    <a href="character-information/lyra.html"><img class="profileImage" src="images/lyra.png" alt="Mugshot of Lyra Moonshard">
+                    <h3>Lyra Moonshard</h3></a>
                     <p>Alias: The Rift Walker</p>
                     <p>Threat: Severe Risk</p>
-                    <p>Status: Unknown Whereabouts</p>
+                    <p>Status: Most wanted</p>
                     <a href="character-information/lyra.html" class="button">View Full Report</a>
                 </article>
 
-                <article class="profileCard">
-                    <a href="character-information/seraphine.html"><img class="profileImage" src="images/seraphine.png" alt="Mugshot of Seraphine Emberveil"></a>
-                    <h3>Seraphine Emberveil</h3>
+                <article class="profileCard" data-threat="3" data-status="mostWanted" data-search="seraphine emberveil ashen empress">
+                    <a href="character-information/seraphine.html"><img class="profileImage" src="images/seraphine.png" alt="Mugshot of Seraphine Emberveil">
+                    <h3>Seraphine Emberveil</h3></a>
                     <p>Alias: The Ashen Empress</p>
                     <p>Threat: Severe Threat</p>
-                    <p>Status: Unknown Whereabouts</p>
+                    <p>Status: Most wanted</p>
                     <a href="character-information/seraphine.html" class="button">View Full Report</a>
                 </article>
             </div>
@@ -88,5 +89,7 @@
     </footer>
 
     <script src="src/index/hamburgerMenu.js"></script>
+    <script src="src/index/filter.js"></script>
+    <script src="src/index/search.js"></script>
 </body>
 </html>
