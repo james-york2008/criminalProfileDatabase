@@ -1,0 +1,16 @@
+#profileLinks {
+    margin-top: 1rem;
+    display: flex;
+    margin: 0 1rem;
+    gap: 1rem;
+}
+
+@media (min-width: 800px) {
+    #profileLinks {
+        margin: 1.5rem 2rem
+    }
+
+    .button:hover {
+        transform: scaleX(1.1);
+    }
+}

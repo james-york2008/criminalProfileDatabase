@@ -1,0 +1,53 @@
+.profileImage {
+    width: 50%;
+    border-radius: 10px;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+ol {
+    display: grid;
+    gap: 10px 20px;
+}
+
+dt {
+    font-weight: bold;
+    grid-column: 1;
+}
+
+dd {
+    margin: 0;
+    grid-column: 2;
+}
+
+#description {
+    margin: 0 1rem 1rem;
+}
+
+@media (min-width: 700px) {
+    .profileImage {
+        width: 20%;
+        margin-left: 1rem;
+    }
+
+    #profile h1 {
+        margin-left: 2rem;
+    }
+
+    #profile {
+        flex-direction: row;
+        margin-top: 1rem;
+    }
+
+    #description {
+        flex-direction: column;
+        width: 33%;
+        margin-top: 5rem;
+    }
+}

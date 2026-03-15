@@ -21,14 +21,6 @@
     border-radius: 5px;
 }
 
-.button {
-    padding: 0.6rem 1rem;
-    border-radius: 5px;
-    color: black;
-    background-color: rgb(0, 0, 0, 0.2);
-    text-decoration: none;
-}
-
 .button:hover {
     cursor: pointer;
 }
