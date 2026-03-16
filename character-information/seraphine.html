@@ -2,94 +2,113 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="wilih=device-wilih, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Government File — Subject: Seraphine Emberveil</title>
-    <link rel="stylesheet" type="text/css" href="../src/character-report.css">
+    <link rel="stylesheet" type="text/css" href="../src/global/base.css">
+    <link rel="stylesheet" type="text/css" href="../src/global/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../src/profiles/profiles.css">
+    <link rel="stylesheet" type="text/css" href="../src/profiles/profileLinks.css">
+    <link rel="stylesheet" type="text/css" href="../src/profiles/caseFiles.css">
+    <link rel="stylesheet" type="text/css" href="../src/global/footer.css">
 </head>
 <body>
-    
-    <header>
-        <h1>High Risk Threat Report:</h1>
-        <h1>Seraphine Emberveil</h1>
-    </header>
-    
     <main>
-        <section class="metadata">
-            <ul>
-                <li>Classification: HIGH RISK - Thermal-Arcane Catastrophic Hazard</li>
-                <li>Subject ID: LM-0427</li>
-                <li>Status: Unknown Whereabouts</li>
-            </ul>
-        </section>
-
-        <img class="itab-logo" src="../images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo">
-    
-        <figure>
-            <img src="../images/seraphine.png" alt="Image of Seraphine Emberveil">
-            <figcaption>Profile Image of Seraphine Emberveil</figcaption>
-        </figure>
-        
-        <section class="appearance">
-        <h2>APPEARANCE</h2>
-        <ul>
-            <li><p>Physique: Slender humanoid with ember-hued skin</p></li>
-            <li><p>Thermal Signature: Surface temperatures fluctuate above humanoid norms</p></li>
-            <li><p>Hair: Slow coal-red glow, shedding sparks that rise rather than fall</p></li>
-            <li><p>Eyes: Concentric rings of gold and crimson, rotating like miniature solar furnaces</p></li>
-            <li><p>Attire: Heat-woven fabrics with charstone plating suppressing volatile emissions</p></li>
-            <li><p>Aura: Persistent thermal distortion radius; nearby objects warp, soften, or ignite</p></li>
-        </ul>
-        </section>
-
-        <section class="known-activities">
-            <h2 class="main-subtitles">KNOWN ACTIVITIES</h2>
-            <ul>
-                <li><p>Operates in Ashen Chasm Network, exploiting magma currents and unstable mineral deposits</p></li>
-                <li><p>Extracts igneous essence clusters for arcane black-market brokers</p></li>
-                <li><p>Responsible for the Cindervault Collapse—manipulating subterranean heat veins to trigger cascading facility failures</p></li>
-                <li><p>Traverses molten surfaces as though gravity does not apply</p></li>
-                <li><p>Avoids Lyra and Drazik when possible; hostile encounters reported when paths intersect over volatile resources</p></li>
-            </ul>
-        </section>
-
-        <section class="tactics">
-            <h2>TACTICS</h2>
-            <ul>
-                <li><p>Avoids Lyra and Drazik when possible; hostile encounters reported when paths intersect over volatile resources</p></li>
-                <li><p>Uses “silent flare rifts” to bypass containment or destroy tracking devices</p></li>
-                <li><p>Carefully orchestrates large-scale heat accumulation for strategic purposes</p></li>
-            </ul>
-        </section>
-
-        <section class="threat-assessment">
-            <h2>THREAT ASSESSMENT</h2>
-            <ul>
-                <li><p>Level: 5 – Thermal-Arcane Catastrophic</p></li>
-                <li><p>Mastery over pyro-arcane energies renders traditional containment ineffective</p></li>
-                <li><p>Potential for continent-scale thermal upheaval if unchecked</p></li>
-                <li><p>Strategic, disciplined, and unpredictable in objectives</p></li>
-            </ul>
-        </section>
-
-        <section class="recommended-actions">
-            <h3>RECOMMENDED ACTIONS</h3>
-            <ul>
-                <li><p>Avoid direct approach; enforce geothermal hazard clearance and remote deterrence</p></li>
-                <li><p>Monitor heat-dense regions and arcane black-market transactions</p></li>
-                <li><p>Evacuate areas with confirmed activity</p></li>
-                <li><p>Document encounters with Lyra Moonshard or Drazik Voidcleaver to assess potential alliances or conflicts</p></li>
-            </ul>
-        </section>
-
-            <section class="sources">
-                <div class="sources">
-                <a href="../observation-logs/lyra-observation-logs.html">Observation Logs</a>
+        <div class="blueBackground">
+            <nav id="home">
+                <div id="titleWrapper">
+                    <a href="index.html"><img src="../images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo" class="itabLogo" loading="lazy"></a>
+                    <h1>Interdimensional Threat Analysis Bureau</h1>
+                    <button id="dropdownButton">☰</button>
+                    <ul id="desktopNavList">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#profile">Profile</a></li>
+                        <li><a href="#legal">Legal</a></li>
+                    </ul>
                 </div>
-            </section>
+
+                <ul class="d-none" id="navList">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#legal">Legal</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section id="profile">
+            <img src="../images/seraphine/seraphine.png" alt="Mugshot of Lyra Moonshard" loading="lazy" class="profileImage">
+            <div id="criminalInfo">
+                <h1>Criminal Profile</h1>
+                <ol>
+                    <dt>Name:</dt>
+                    <dd>Seraphine Emberveil</dd>
+
+                    <dt>Alias:</dt>
+                    <dd>The Cinder Duchess</dd>
+
+                    <dt>Age:</dt>
+                    <dd>32</dd>
+
+                    <dt>Height:</dt>
+                    <dd>5'9"</dd>
+
+                    <dt>Weight:</dt>
+                    <dd>140 lbs.</dd>
+                </ol>
+            </div>
+
+            <div id="description">
+                <h2>Description: </h2>
+                <p>A charismatic fire mage who commands underground smuggling rings. Her temper is as infamous as her magic, and entire warehouses have been reduced to ash when negotiations failed.</p>
+            </div>
+        </section>
+
+        <section id="profileLinks">
+            <a href="#" class="button">CRIMINAL RECORD</a>
+            <a href="#" class="button">KNOWN ASSOCIATES</a>
+            <a href="#" class="button">WANTED STATUS</a>
+        </section>
+
+        <section id="caseFiles">
+            <article>
+                <a href="#">
+                    <img src="../images/seraphine/caseFileOne.png" alt="Ashfall Dock Arson casee photo" loading="lazy">
+                    <h3>Ashfall Dock Arson</h3>
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <img src="../images/seraphine/caseFileTwo.png" alt="Emberveil Smuggling Ring casee photo" loading="lazy">
+                    <h3>Emberveil Smuggling Ring</h3>
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <img src="../images/seraphine/caseFileThree.png" alt="Crimson Lantern Firestorm casee photo" loading="lazy">
+                    <h3>Crimson Lantern Firestorm</h3>
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <img src="../images/seraphine/caseFileFour.png" alt="Inferno Exchange Raid casee photo" loading="lazy">
+                    <h3>Inferno Exchange Raid</h3>
+                </a>
+            </article>
+
+        </section>
+
             
     </main>
-    <footer>
-        <p>Interdimensional Threat Analysis Bureau &copy;</p>
+    <footer id="legal">
+        <a href="#" class="footerLinks">PRIVACY POLICY</a>
+        <a href="#" class="footerLinks">TERMS OF USE</a>
+        <a href="#home" class="footerLinks">BACK TO TOP</a>
+
+        <p><small id="copyrightTag">&copy; iTab 2026</small></p>
     </footer>
+    
+    <script src="../src/global/hamburgerMenu.js"></script>
 </body>
 </html>
