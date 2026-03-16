@@ -6,6 +6,7 @@ footer {
 
 .footerLinks {
     color: rgb(8, 45, 73);
+    padding-left: 0.3rem;
 }
 
 .footerLinks:hover {

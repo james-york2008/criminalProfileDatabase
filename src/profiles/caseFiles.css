@@ -1,0 +1,39 @@
+#caseFiles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin: 1rem;
+    margin-top: 2rem;
+}
+
+#caseFiles h3 {
+    width: 125px;
+    color: black;
+}
+
+#caseFiles article {
+    width: 25%;
+    height: 300px;
+    text-align: center;
+}
+
+#caseFiles img {
+    height: 75%;
+    border-radius: 10px;
+}
+
+@media (min-width: 700px) {
+    #caseFiles {
+        gap: 0;
+        margin-top: 3rem;
+    }
+
+    #caseFiles h3 {
+        width: 100%;
+    }
+
+    #caseFiles article:hover {
+        transform: scale(1.03);
+    }
+}

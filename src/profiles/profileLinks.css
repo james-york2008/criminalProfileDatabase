@@ -3,6 +3,7 @@
     display: flex;
     margin: 0 1rem;
     gap: 1rem;
+    text-decoration: underline;
 }
 
 @media (min-width: 800px) {

@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="../src/global/base.css">
     <link rel="stylesheet" type="text/css" href="../src/global/navbar.css">
     <link rel="stylesheet" type="text/css" href="../src/profiles/profiles.css">
+    <link rel="stylesheet" type="text/css" href="../src/profiles/profileLinks.css">
+    <link rel="stylesheet" type="text/css" href="../src/profiles/caseFiles.css">
     <link rel="stylesheet" type="text/css" href="../src/global/footer.css">
 </head>
 <body>
@@ -19,75 +21,79 @@
                     <button id="dropdownButton">☰</button>
                     <ul id="desktopNavList">
                         <li><a href="../index.html">Home</a></li>
-                        <li><a href="#criminalProfiles">Cases</a></li>
+                        <li><a href="#profile">Profile</a></li>
                         <li><a href="#legal">Legal</a></li>
                     </ul>
                 </div>
 
                 <ul class="d-none" id="navList">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#criminalProfiles">Cases</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#profile">Cases</a></li>
                     <li><a href="#legal">Legal</a></li>
                 </ul>
             </nav>
         </div>
 
         <section id="profile">
-            <img src="../images/lyra.png" alt="Mugshot of Lyra Moonshard" loading="lazy">
-            <h1>Criminal Profile</h1>
-            <ol>
-                <dt>Name:</dt>
-                <dd>Lyra Moonshard</dd>
+            <img src="../images/lyra/lyra.png" alt="Mugshot of Lyra Moonshard" loading="lazy" class="profileImage">
+            <div id="criminalInfo">
+                <h1>Criminal Profile</h1>
+                <ol>
+                    <dt>Name:</dt>
+                    <dd>Lyra Moonshard</dd>
 
-                <dt>Alias:</dt>
-                <dd>The Silver Whisperer</dd>
+                    <dt>Alias:</dt>
+                    <dd>The Silver Whisperer</dd>
 
-                <dt>Age:</dt>
-                <dd>27</dd>
+                    <dt>Age:</dt>
+                    <dd>27</dd>
 
-                <dt>Height:</dt>
-                <dd>5'7"</dd>
+                    <dt>Height:</dt>
+                    <dd>5'7"</dd>
 
-                <dt>Weight</dt>
-                <dd>130 lbs.</dd>
-            </ol>
+                    <dt>Weight:</dt>
+                    <dd>130 lbs.</dd>
+                </ol>
+            </div>
 
-            <h3>Description: </h3>
-            <p>A quiet illusionist known for infiltrating royal vaults using moonlight-based glamour magic. Lyra prefers stealth and rarely harms anyone, leaving only faint silver motes behind after a heist.</p>
+            <div id="description">
+                <h2>Description: </h2>
+                <p>A quiet illusionist known for infiltrating royal vaults using moonlight-based glamour magic. Lyra prefers stealth and rarely harms anyone, leaving only faint silver motes behind after a heist.</p>
+            </div>
         </section>
 
         <section id="profileLinks">
-            <a href="#">CRIMINAL RECORD</a>
-            <a href="#">KNOWN ASSOCIATES</a>
-            <a href="#">WANTED STATUS</a>
+            <a href="#" class="button">CRIMINAL RECORD</a>
+            <a href="#" class="button">KNOWN ASSOCIATES</a>
+            <a href="#" class="button">WANTED STATUS</a>
         </section>
 
         <section id="caseFiles">
             <article>
                 <a href="#">
-                    <h4>Moonlit Vault Breach</h4>
-                    <img src="#" alt="Moonlit Vault Breach casee photo" loading="lazy">
+                    <img src="../images/lyra/caseFileOne.png" alt="Moonlit Vault Breach casee photo" loading="lazy">
+                    <h3>Moonlit Vault Breach</h3>
                 </a>
             </article>
 
             <article>
                 <a href="#">
-                    <h4>Phantom Treasury Incident</h4>
-                    <img src="#" alt="Phantom Treasury Incident casee photo" loading="lazy">
+                    <img src="../images/lyra/caseFileTwo.png" alt="Phantom Treasury Incident casee photo" loading="lazy">
+                    <h3>Phantom Treasury Incident</h3>
                 </a>
             </article>
 
             <article>
                 <a href="#">
-                    <h4>Silver Market Disappearance</h4>
-                    <img src="#" alt="Silver Market Disappearance casee photo" loading="lazy">
+                    <img src="../images/lyra/caseFileThree.png" alt="Silver Market Disappearance casee photo" loading="lazy">
+                    <h3>Silver Market Disappearance</h3>
                 </a>
             </article>
 
             <article>
                 <a href="#">
-                    <h4>Lunaris Jewel Heist</h4>
-                    <img src="#" alt="Lunaris Jewel Heist casee photo" loading="lazy">
+                    <img src="../images/lyra/caseFileFour.png" alt="Lunaris Jewel Heist casee photo" loading="lazy">
+                    <h3>Lunaris Jewel Heist</h3>
                 </a>
             </article>
 
@@ -103,6 +109,6 @@
         <p><small id="copyrightTag">&copy; iTab 2026</small></p>
     </footer>
     
-    <script src="src/global/hamburgerMenu.js"></script>
+    <script src="../src/global/hamburgerMenu.js"></script>
 </body>
 </html>
