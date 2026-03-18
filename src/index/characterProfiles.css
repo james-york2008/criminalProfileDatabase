@@ -17,12 +17,12 @@
     justify-content: center;
 }
 
-#profileCards button {
+#profileCards .button {
     border-radius: 5px;
 }
 
-.button:hover {
-    cursor: pointer;
+#profileCards h3 {
+    font-size: 1.5rem;
 }
 
 @media (min-width: 540px) {
@@ -32,14 +32,10 @@
     }
 
     .profileImage {
-        width: 35%;
+        width: 50%;
     }
 
     .profileCard {
         width: 50%;
-    }
-
-    .profileImage:hover {
-        width: 36%;   
     }
 }
