@@ -11,7 +11,8 @@
     margin-top: 2rem;
 }
 
-ol {
+dl {
+    margin-left: 2rem;
     display: grid;
     gap: 10px 20px;
 }
@@ -19,6 +20,7 @@ ol {
 dt {
     font-weight: bold;
     grid-column: 1;
+    margin: 0;
 }
 
 dd {

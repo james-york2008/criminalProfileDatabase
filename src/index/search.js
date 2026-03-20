@@ -19,7 +19,4 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault()
         handleChange()
     })
-
-
-
 })

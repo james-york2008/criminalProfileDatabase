@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Government File — Subject: Lyra Moonshard</title>
+    <title>Lyra Moonshard</title>
     <link rel="stylesheet" type="text/css" href="../src/global/base.css">
     <link rel="stylesheet" type="text/css" href="../src/global/navbar.css">
     <link rel="stylesheet" type="text/css" href="../src/profiles/profiles.css">
@@ -13,32 +13,34 @@
 </head>
 <body>
     <main>
-        <div class="blueBackground">
-            <nav id="home">
-                <div id="titleWrapper">
-                    <a href="index.html"><img src="../images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo" class="itabLogo" loading="lazy"></a>
-                    <h1>Interdimensional Threat Analysis Bureau</h1>
-                    <button id="dropdownButton">☰</button>
-                    <ul id="desktopNavList">
+        <header>
+            <div class="blueBackground">
+                <nav id="home">
+                    <div id="titleWrapper">
+                        <a href="index.html"><img src="../images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo" class="itabLogo" loading="lazy"></a>
+                        <h1>Interdimensional Threat Analysis Bureau</h1>
+                        <button id="dropdownButton">☰</button>
+                        <ul id="desktopNavList">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="#profile">Profile</a></li>
+                            <li><a href="#legal">Legal</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="d-none" id="navList">
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="#profile">Profile</a></li>
                         <li><a href="#legal">Legal</a></li>
                     </ul>
-                </div>
-
-                <ul class="d-none" id="navList">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="#profile">Profile</a></li>
-                    <li><a href="#legal">Legal</a></li>
-                </ul>
-            </nav>
-        </div>
+                </nav>
+            </div>
+        </header>
 
         <section id="profile">
             <img src="../images/lyra/lyra.png" alt="Mugshot of Lyra Moonshard" loading="lazy" class="profileImage">
             <div id="criminalInfo">
                 <h1>Criminal Profile</h1>
-                <ol>
+                <dl>
                     <dt>Name:</dt>
                     <dd>Lyra Moonshard</dd>
 
@@ -53,7 +55,7 @@
 
                     <dt>Weight:</dt>
                     <dd>130 lbs.</dd>
-                </ol>
+                </dl>
             </div>
 
             <div id="description">
@@ -70,28 +72,28 @@
 
         <section id="caseFiles">
             <article>
-                <a href="#">
+                <a href="../caseFiles/lyra/caseOne.html">
                     <img src="../images/lyra/caseFileOne.png" alt="Moonlit Vault Breach casee photo" loading="lazy">
                     <h3>Moonlit Vault Breach</h3>
                 </a>
             </article>
 
             <article>
-                <a href="#">
+                <a href="../caseFiles/lyra/caseTwo.html">
                     <img src="../images/lyra/caseFileTwo.png" alt="Phantom Treasury Incident casee photo" loading="lazy">
                     <h3>Phantom Treasury Incident</h3>
                 </a>
             </article>
 
             <article>
-                <a href="#">
+                <a href="../caseFiles/lyra/caseThree.html">
                     <img src="../images/lyra/caseFileThree.png" alt="Silver Market Disappearance casee photo" loading="lazy">
                     <h3>Silver Market Disappearance</h3>
                 </a>
             </article>
 
             <article>
-                <a href="#">
+                <a href="../caseFiles/lyra/caseFour.html">
                     <img src="../images/lyra/caseFileFour.png" alt="Lunaris Jewel Heist casee photo" loading="lazy">
                     <h3>Lunaris Jewel Heist</h3>
                 </a>

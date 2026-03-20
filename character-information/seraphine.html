@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Government File — Subject: Seraphine Emberveil</title>
+    <title>Seraphine Emberveil</title>
     <link rel="stylesheet" type="text/css" href="../src/global/base.css">
     <link rel="stylesheet" type="text/css" href="../src/global/navbar.css">
     <link rel="stylesheet" type="text/css" href="../src/profiles/profiles.css">
@@ -13,32 +13,34 @@
 </head>
 <body>
     <main>
-        <div class="blueBackground">
-            <nav id="home">
-                <div id="titleWrapper">
-                    <a href="index.html"><img src="../images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo" class="itabLogo" loading="lazy"></a>
-                    <h1>Interdimensional Threat Analysis Bureau</h1>
-                    <button id="dropdownButton">☰</button>
-                    <ul id="desktopNavList">
+        <header>
+            <div class="blueBackground">
+                <nav id="home">
+                    <div id="titleWrapper">
+                        <a href="index.html"><img src="../images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo" class="itabLogo" loading="lazy"></a>
+                        <h1>Interdimensional Threat Analysis Bureau</h1>
+                        <button id="dropdownButton">☰</button>
+                        <ul id="desktopNavList">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="#profile">Profile</a></li>
+                            <li><a href="#legal">Legal</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="d-none" id="navList">
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="#profile">Profile</a></li>
                         <li><a href="#legal">Legal</a></li>
                     </ul>
-                </div>
-
-                <ul class="d-none" id="navList">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="#profile">Profile</a></li>
-                    <li><a href="#legal">Legal</a></li>
-                </ul>
-            </nav>
-        </div>
+                </nav>
+            </div>
+        </header>
 
         <section id="profile">
             <img src="../images/seraphine/seraphine.png" alt="Mugshot of Lyra Moonshard" loading="lazy" class="profileImage">
             <div id="criminalInfo">
                 <h1>Criminal Profile</h1>
-                <ol>
+                <dl>
                     <dt>Name:</dt>
                     <dd>Seraphine Emberveil</dd>
 
@@ -53,7 +55,7 @@
 
                     <dt>Weight:</dt>
                     <dd>140 lbs.</dd>
-                </ol>
+                </dl>
             </div>
 
             <div id="description">

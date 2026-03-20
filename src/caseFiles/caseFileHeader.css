@@ -1,0 +1,117 @@
+#metadata h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.metaDataList {
+    text-align: center;
+    padding-top: 1rem;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.metaDataList li {
+    width: 33%;
+}
+
+#caseFileImage {
+    border-radius: 10px;
+}
+
+#caseFileImage, figcaption {
+    width: 50%;
+    margin: 0 25%;
+}
+
+
+
+figcaption {
+    padding-left: 1rem;
+}
+
+#eventInfo {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+#eventInfo li {
+    width: 33%;
+    padding-bottom: 3rem;
+}
+
+#eventInfo strong {
+    font-size: 1.3rem;
+}
+
+@media (min-width: 540px) {
+    body p {
+        font-size: 1.2rem;
+    }
+
+    .infoListItems {
+        font-size: 1.3rem;
+    }
+
+    .metaDataList li{
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+    }
+
+    .metaDataList strong {
+        font-size: 1.3rem;
+    }
+
+    #caseFileImage, figcaption {
+        width: 100%;
+        margin: 0;
+    }
+
+    #caseFileHeader {
+        display: flex;
+    }
+
+    #eventInfo {
+        margin-top: 3rem;
+        list-style: disc;
+        gap: 2rem;
+        margin-right: 3rem;
+        flex-wrap: wrap;
+    }
+
+    #eventInfo li {
+        width: 60%;
+    }
+}
+
+@media (min-width: 700px) {
+    figure {
+        width: 75%;
+    }
+}
+
+@media (min-width: 992px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    body p {
+        font-size: 1.4rem;
+    }
+
+    figure {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    #lg-flex {
+        display: flex;
+    }
+
+    #stolenObjects {
+        margin-top: 10rem;
+    }
+}
