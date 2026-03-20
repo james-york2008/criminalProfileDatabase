@@ -1,6 +1,6 @@
 footer {
     background-color: rgba(0, 0, 0, 0.1);
-    padding-top: 1rem;
+    padding: 1rem;
     padding-left: 5%;
     padding-bottom: 1rem;
 }
@@ -17,7 +17,6 @@ footer {
 
 #copyrightTag {
     display: flex;
-    text-align: end;
     justify-content: end;
     padding-right: 1rem;
 }

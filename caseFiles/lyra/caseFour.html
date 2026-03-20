@@ -6,31 +6,98 @@
     <title>Lunaris Jewel Heist</title>
     <link rel="stylesheet" type="text/css" href="../../src/global/base.css">
     <link rel="stylesheet" type="text/css" href="../../src/global/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../../src/caseFiles/caseFileHeader.css">
+    <link rel="stylesheet" type="text/css" href="../../src/caseFiles/caseFile.css">
+
     <link rel="stylesheet" type="text/css" href="../../src/global/footer.css">
 </head>
 <body>
     <main>
-        <div class="blueBackground">
-            <nav id="home">
-                <div id="titleWrapper">
-                    <a href="index.html"><img src="../../images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo" class="itabLogo" loading="lazy"></a>
-                    <h1>Interdimensional Threat Analysis Bureau</h1>
-                    <button id="dropdownButton">☰</button>
-                    <ul id="desktopNavList">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="#profile">Profile</a></li>
+        <header>
+            <div class="blueBackground">
+                <nav id="home">
+                    <div id="titleWrapper">
+                        <a href="index.html"><img src="../../images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo" class="itabLogo" loading="lazy"></a>
+                        <h1>Interdimensional Threat Analysis Bureau</h1>
+                        <button id="dropdownButton">☰</button>
+                        <ul id="desktopNavList">
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="#caseFile">File</a></li>
+                            <li><a href="#legal">Legal</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="d-none" id="navList">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="#caseFile">File</a></li>
                         <li><a href="#legal">Legal</a></li>
                     </ul>
-                </div>
+                </nav>
+            </div>
+        </header>
 
-                <ul class="d-none" id="navList">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="#profile">Profile</a></li>
-                    <li><a href="#legal">Legal</a></li>
+        <section id="metadata">
+            <h1>Lunaris Jewel Heist</h1>
+            <ul class="metaDataList">
+                <li><strong>Case Number:</strong><br>#XM-312</li>
+                <li><strong>Status:</strong><br>ACTIVE</li>
+                <li><strong>Date:</strong><br>12/22/25</li>
+            </ul>
+        </section>
+    
+        <div id="lg-flex"> <!--992px display flex-->
+            <section id="caseFileHeader">
+                <figure>
+                    <img src="../../images/lyra/caseFileFour.png" alt="Image of the Moonlit Vault Breach" id="caseFileImage">
+                    <figcaption><strong>EVIDENCE PHOTO:</strong> VAULT INTERIOR POST-INCIDENT</figcaption>
+                </figure>
+
+                <ul id="eventInfo">
+                    <li><strong>Location:</strong><br>Lunaris Royal Exhibition Hall</li>
+                    <li><strong>Time:</strong><br>03:03 AM</li>
+                    <li><strong>Witnesses:</strong><br>Three guards (disorientation reported)</li>
                 </ul>
-            </nav>
+            </section>
+
+            <div id="stolenObjects">
+                <h2 class="sectionTitle">STOLEN OBJECT</h2>
+                <p class="sectionDescription">A fractured gemstone fragment embedded within a ceremonial crown. Previously cataloged as decorative damage with no restoration value.</p>
+            </div>
         </div>
 
+        <div id="incidentSummary">
+            <h2 class="sectionTitle">INCIDENT SUMMARY</h2>
+            <p class="sectionDescription">At approximately 03:03 local time, security personnel reported a synchronized disorientation event lasting 10 seconds. Unlike prior incidents, partial system functionality remained active. Footage reveals a distortion field moving with intent toward a restricted display. The subject bypassed multiple high-value artifacts, removing only the damaged gemstone fragment. Notably, a secondary anomaly was detected: An unidentified heat signature appeared briefly in an adjacent corridor, then vanished.</p>
+        </div>
+
+
+        <div id="evidence">
+            <h2 class="sectionTitle">KEY EVIDENCE</h2>
+            <ul>
+                <li class="infoListItems">Strongest arcane resonance recorded to date across all related cases</li>
+                <li class="infoListItems">Residual signature shows interference pattern (non-Lyra origin)</li>
+                <li class="infoListItems">Trace thermal distortion inconsistent with illusion magic</li>
+            </ul>
+        </div>
+
+        <div id="notes">
+            <h2 class="sectionTitle">INVESTIGATOR NOTES</h2>
+            <ul>
+                <li class="infoListItems">First confirmed indication of external interference during operation</li>
+                <li class="infoListItems">Subject deviated from optimal extraction route</li>
+                <li class="infoListItems">Movement patterns suggest urgency rather than precision</li>
+            </ul>
+        </div>
+
+        <div id="relatedIncidents">
+            <h2 class="sectionTitle">RELATED INCIDENTS</h2>
+            <ul class="sectionDescription">
+                <li><a href="caseThree.html">Silver Market Disappearance (XM-305)</a></li>
+                <li><a href="#relatedIncident" id="relatedIncident"><span class="redacted">REDACTED</span> Investigation</a></li>
+                <li><a href="caseOne.html">Moonlit Vault Breach (XM-301)</a></li>
+            </ul>
+        </div>
+    
     </main>
     <footer id="legal">
         <a href="#" class="footerLinks">PRIVACY POLICY</a>
@@ -40,6 +107,6 @@
         <p><small id="copyrightTag">&copy; iTab 2026</small></p>
     </footer>
     
-    <script src="../src/global/hamburgerMenu.js"></script>
+    <script src="../../src/global/hamburgerMenu.js"></script>
 </body>
 </html>
