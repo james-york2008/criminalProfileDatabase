@@ -65,9 +65,21 @@
         </section>
 
         <section id="profileLinks">
-            <a href="#" class="button">CRIMINAL RECORD</a>
-            <a href="#" class="button">KNOWN ASSOCIATES</a>
-            <a href="#" class="button">WANTED STATUS</a>
+            <div class="dropdown">
+                <button class="button" id="criminalRecordButton">CRIMINAL RECORD</button>            
+                <ul class="profileDropdowns hidden" id="criminalRecordDropdown">
+                    <li><a href="../caseFiles/lyra/caseFour.html">Theft</a></li>
+                    <li><a href="../caseFiles/lyra/caseOne.html">Theft</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="button" id="knownAssociatesButton">KNOWN ASSOCIATES</button>
+                <ul class="profileDropdowns hidden" id="knownAssociatesDropdown">
+                    <li><a href="seraphine.html">Seraphine Emberveil</a></li>
+                    <li><a href="knownAssociatesDropdown" class="redacted">REDACTED</a></li>
+                </ul>
+            </div>
         </section>
 
         <section id="caseFiles">
@@ -112,5 +124,6 @@
     </footer>
     
     <script src="../src/global/hamburgerMenu.js"></script>
+    <script src="../src/profiles/profileDropdowns.js"></script>
 </body>
 </html>
