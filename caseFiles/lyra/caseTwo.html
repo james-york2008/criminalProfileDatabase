@@ -13,13 +13,13 @@
 </head>
 <body>
     <main>
-        <header>
+        <header id="home">
             <div class="blueBackground">
-                <nav id="home">
+                <nav>
                     <div id="titleWrapper">
                         <a href="../../index.html"><img src="../../images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo" class="itabLogo" loading="lazy"></a>
                         <h1>Interdimensional Threat Analysis Bureau</h1>
-                        <button id="dropdownButton">☰</button>
+                        <button id="dropdownButton" type="button" aria-expanded="false" aria-controls="navList">☰</button>
                         <ul id="desktopNavList">
                             <li><a href="../../index.html">Home</a></li>
                             <li><a href="#caseFile">File</a></li>
@@ -37,7 +37,7 @@
         </header>
 
         <section id="metadata">
-            <h1>Phantom Treasury Incident</h1>
+            <h2>Phantom Treasury Incident</h2>
             <ul class="metaDataList">
                 <li><strong>Case Number:</strong><br>#XM-298</li>
                 <li><strong>Status:</strong><br>ACTIVE</li>
@@ -48,7 +48,7 @@
         <div id="lg-flex"> <!--992px display flex-->
             <section id="caseFileHeader">
                 <figure>
-                    <img src="../../images/lyra/caseFileTwo.png" alt="Image of the Moonlit Vault Breach" id="caseFileImage">
+                    <img src="../../images/lyra/caseFileTwo.png" alt="Image of the Phantom Treasury Incident" id="caseFileImage">
                     <figcaption><strong>EVIDENCE PHOTO:</strong> TREASURY INTERIOR POST-INCIDENT</figcaption>
                 </figure>
 
@@ -59,48 +59,48 @@
                 </ul>
             </section>
 
-            <div id="stolenObjects">
+            <section id="stolenObjects">
                 <h2 class="sectionTitle">STOLEN OBJECT</h2>
                 <p class="sectionDescription">A crystalline ledger prism used historically for ceremonial accounting rituals. Previously believed to hold no functional magical properties.</p>
-            </div>
+            </section>
         </div>
 
-        <div id="incidentSummary">
+        <section id="incidentSummary">
             <h2 class="sectionTitle">INCIDENT SUMMARY</h2>
             <p class="sectionDescription">At approximately 01:42 local time, internal treasury records began updating autonomously, logging transactions that did not occur. Moments later, all written and digital logs experienced partial data loss. Security review shows no physical breach. However, a six-second visual distortion event was detected across all surveillance systems. Following system restoration, a single archival artifact was confirmed missing. Notably, no currency reserves or high-value assets were affected.</p>
-        </div>
+        </section>
 
 
-        <div id="evidence">
+        <section id="evidence">
             <h2 class="sectionTitle">KEY EVIDENCE</h2>
             <ul>
                 <li class="infoListItems">Residual arcane signature consistent with refractive illusion magic</li>
                 <li class="infoListItems">Temporary data desynchronization across multiple storage systems</li>
                 <li class="infoListItems">Silver particulate traces detected near archival vault (dissipated within minutes)</li>
             </ul>
-        </div>
+        </section>
 
-        <div id="notes">
+        <section id="notes">
             <h2 class="sectionTitle">INVESTIGATOR NOTES</h2>
             <ul>
                 <li class="infoListItems">Target selection mirrors Case XM-301 (Moonlit Vault Breach)</li>
                 <li class="infoListItems">Subject demonstrates continued disinterest in monetary assets</li>
                 <li class="infoListItems">Removed object emits low-level resonance under arcane scanning</li>
             </ul>
-        </div>
+        </section>
 
-        <div id="relatedIncidents">
+        <section id="relatedIncidents">
             <h2 class="sectionTitle">RELATED INCIDENTS</h2>
             <ul class="sectionDescription">
                 <li><a href="caseOne.html">Moonlit Vault Breach (XM-301)</a></li>
                 <li><a href="caseThree.html">Silver Market Disappearance (XM-305)</a></li>
             </ul>
-        </div>
+        </section>
     
     </main>
     <footer id="legal">
         <a href="#" class="footerLinks">PRIVACY POLICY</a>
-        <a href="#" class="footerLinks">TERMS OF USE</a>
+        <a href="../../character-information/lyra.html" class="footerLinks">BACK TO PROFILE</a>
         <a href="#home" class="footerLinks">BACK TO TOP</a>
 
         <p><small id="copyrightTag">&copy; iTab 2026</small></p>

@@ -1,15 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const criminalRecordButton = document.getElementById('criminalRecordButton')
-    const criminalRecordContent = document.getElementById('criminalRecordDropdown')
+    document.querySelectorAll('.dropdown').forEach(dropdown => {
+        const btn = dropdown.querySelector('button')
+        const content = dropdown.querySelector('.profileDropdowns')
 
-    criminalRecordButton.addEventListener('click', function() {
-        criminalRecordContent.classList.toggle('open')
-    })
-
-    const knownAssociatesButton = document.getElementById('knownAssociatesButton')
-    const knownAssociatesContent = document.getElementById('knownAssociatesDropdown')
-
-    knownAssociatesButton.addEventListener('click', function() {
-        knownAssociatesContent.classList.toggle('open')
+        btn.addEventListener('click', () => {
+            const isOpen = content.classList.toggle('open')
+            btn.setAttribute('aria-expanded', isOpen)
+        })
     })
 })

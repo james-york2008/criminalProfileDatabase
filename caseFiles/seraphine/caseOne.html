@@ -13,13 +13,13 @@
 </head>
 <body>
     <main>
-        <header>
+        <header id="home">
             <div class="blueBackground">
-                <nav id="home">
+                <nav>
                     <div id="titleWrapper">
                         <a href="../../index.html"><img src="../../images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo" class="itabLogo" loading="lazy"></a>
                         <h1>Interdimensional Threat Analysis Bureau</h1>
-                        <button id="dropdownButton">☰</button>
+                        <button id="dropdownButton" type="button" aria-expanded="false" aria-controls="navList">☰</button>
                         <ul id="desktopNavList">
                             <li><a href="../../index.html">Home</a></li>
                             <li><a href="#caseFile">File</a></li>
@@ -37,9 +37,9 @@
         </header>
 
         <section id="metadata">
-            <h1>Dockside Cinder Event</h1>
+            <h2>Dockside Cinder Event</h2>
             <ul class="metaDataList">
-                <li><strong>Case Number:</strong><br> XM-284</li>
+                <li><strong>Case Number:</strong><br>#XM-284</li>
                 <li><strong>Status:</strong><br>CLOSED</li>
                 <li><strong>Date:</strong><br>10/12/25</li>
             </ul>
@@ -59,19 +59,19 @@
                 </ul>
             </section>
 
-            <div id="stolenObjects">
+            <section id="stolenObjects">
                 <h2 class="sectionTitle">STOLEN OBJECT</h2>
                 <p class="sectionDescription">A reinforced cargo container registered under private contract. Contents officially listed as “ceremonial metalwork.”</p>
-            </div>
+            </section>
         </div>
 
-        <div id="incidentSummary">
+        <section id="incidentSummary">
             <h2 class="sectionTitle">INCIDENT SUMMARY</h2>
             <p class="sectionDescription">At approximately 02:18 local time, a fire erupted within Dock Sector 7, rapidly spreading across multiple shipping containers. Emergency response units reported extreme heat concentration inconsistent with natural fire behavior. Despite widespread structural damage, several adjacent containers remained completely untouched. The fire self-extinguished after approximately six minutes. Post-incident inventory revealed a single container had been completely incinerated beyond material recovery. All other cargo remained intact.</p>
-        </div>
+        </section>
 
 
-        <div id="evidence">
+        <section id="evidence">
             <h2 class="sectionTitle">KEY EVIDENCE</h2>
             <ul>
                 <li class="infoListItems">Residual flame patterns forming controlled burn boundaries</li>
@@ -79,28 +79,28 @@
                 <li class="infoListItems">Traces of ignited arcane material within destroyed container</li>
                 <li class="infoListItems">No ignition source identified</li>
             </ul>
-        </div>
+        </section>
 
-        <div id="notes">
+        <section id="notes">
             <h2 class="sectionTitle">INVESTIGATOR NOTES</h2>
             <ul>
                 <li class="infoListItems">Uncontrolled destructive magic event</li>
                 <li class="infoListItems">Fire spread avoided high-value shipments entirely</li>
             </ul>
-        </div>
+        </section>
 
-        <div id="relatedIncidents">
+        <section id="relatedIncidents">
             <h2 class="sectionTitle">RELATED INCIDENTS</h2>
             <ul class="sectionDescription">
                 <li><a href="../lyra/caseTwo.html">Phantom Treasury Incident (XM-289)</a></li>
-                <li><a href="caseTwo.html">Ashen Archive Breach (XM-296)</a>
+                <li><a href="caseTwo.html">Ashen Archive Breach (XM-296)</a></li>
             </ul>
-        </div>
+        </section>
     
     </main>
     <footer id="legal">
         <a href="#" class="footerLinks">PRIVACY POLICY</a>
-        <a href="#" class="footerLinks">TERMS OF USE</a>
+        <a href="../../character-information/seraphine.html" class="footerLinks">BACK TO PROFILE</a>
         <a href="#home" class="footerLinks">BACK TO TOP</a>
 
         <p><small id="copyrightTag">&copy; iTab 2026</small></p>

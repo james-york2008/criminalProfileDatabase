@@ -35,10 +35,10 @@ dd {
 @media (min-width: 700px) {
     .profileImage {
         width: 20%;
-        margin-left: 1rem;
+        margin: 1rem 2rem;
     }
 
-    #profile h1 {
+    #profile h2 {
         margin-left: 2rem;
     }
 

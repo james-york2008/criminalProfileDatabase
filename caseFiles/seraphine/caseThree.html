@@ -13,13 +13,13 @@
 </head>
 <body>
     <main>
-        <header>
+        <header id="home">
             <div class="blueBackground">
-                <nav id="home">
+                <nav>
                     <div id="titleWrapper">
                         <a href="../../index.html"><img src="../../images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo" class="itabLogo" loading="lazy"></a>
                         <h1>Interdimensional Threat Analysis Bureau</h1>
-                        <button id="dropdownButton">☰</button>
+                        <button id="dropdownButton" type="button" aria-expanded="false" aria-controls="navList">☰</button>
                         <ul id="desktopNavList">
                             <li><a href="../../index.html">Home</a></li>
                             <li><a href="#caseFile">File</a></li>
@@ -37,9 +37,9 @@
         </header>
 
         <section id="metadata">
-            <h1>Emberglass Cathedral Incident</h1>
+            <h2>Emberglass Cathedral Incident</h2>
             <ul class="metaDataList">
-                <li><strong>Case Number:</strong><br> XM-309</li>
+                <li><strong>Case Number:</strong><br>#XM-309</li>
                 <li><strong>Status:</strong><br>ACTIVE</li>
                 <li><strong>Date:</strong><br>12/10/25</li>
             </ul>
@@ -59,19 +59,19 @@
                 </ul>
             </section>
 
-            <div id="stolenObjects">
+            <section id="stolenObjects">
                 <h2 class="sectionTitle">STOLEN OBJECT</h2>
                 <p class="sectionDescription">A fractured mirror shard embedded within a ceremonial altar piece. Cataloged as decorative damage.</p>
-            </div>
+            </section>
         </div>
 
-        <div id="incidentSummary">
+        <section id="incidentSummary">
             <h2 class="sectionTitle">INCIDENT SUMMARY</h2>
             <p class="sectionDescription">At approximately 01:57 local time, witnesses reported a sudden temperature drop followed by an intense flash of light. Contrary to previous incidents, the fire manifested after initial distortion, not before. The reliquary sustained minimal structural damage. However, the altar centerpiece was reduced to molten residue within seconds. Witnesses describe seeing “light bending inward” prior to ignition.</p>
-        </div>
+        </section>
 
 
-        <div id="evidence">
+        <section id="evidence">
             <h2 class="sectionTitle">KEY EVIDENCE</h2>
             <ul>
                 <li class="infoListItems">Thermal inversion prior to combustion event</li>
@@ -79,9 +79,9 @@
                 <li class="infoListItems">Residual energy inconsistent with Emberveil’s known profile</li>
                 <li class="infoListItems">Fragmentary reflective particles exhibiting resonance decay</li>
             </ul>
-        </div>
+        </section>
 
-        <div id="notes">
+        <section id="notes">
             <h2 class="sectionTitle">INVESTIGATOR NOTES</h2>
             <ul>
                 <li class="infoListItems">Pre-existing anomaly at target site</li>
@@ -89,21 +89,21 @@
                 <li class="infoListItems">Fire used as secondary action, not primary method</li>
                 <li class="infoListItems">Energy readings align with resonance signatures from XM-305 and XM-298</li>
             </ul>
-        </div>
+        </section>
 
-        <div id="relatedIncidents">
+        <section id="relatedIncidents">
             <h2 class="sectionTitle">RELATED INCIDENTS</h2>
             <ul class="sectionDescription">
                 <li><a href="../lyra/caseThree.html">Silver Market Disappearance (XM-305)</a></li>
                 <li><a href="caseTwo.html">Ashen Archive Breach (XM-296)</a></li>
                 <li><a href="../lyra/caseTwo.html">Phantom Treasury Incident (XM-298)</a></li>
             </ul>
-        </div>
+        </section>
     
     </main>
     <footer id="legal">
         <a href="#" class="footerLinks">PRIVACY POLICY</a>
-        <a href="#" class="footerLinks">TERMS OF USE</a>
+        <a href="../../character-information/seraphine.html" class="footerLinks">BACK TO PROFILE</a>
         <a href="#home" class="footerLinks">BACK TO TOP</a>
 
         <p><small id="copyrightTag">&copy; iTab 2026</small></p>

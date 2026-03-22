@@ -13,13 +13,13 @@
 </head>
 <body>
     <main>
-        <header>
+        <header id="home">
             <div class="blueBackground">
-                <nav id="home">
+                <nav>
                     <div id="titleWrapper">
                         <a href="../../index.html"><img src="../../images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo" class="itabLogo" loading="lazy"></a>
                         <h1>Interdimensional Threat Analysis Bureau</h1>
-                        <button id="dropdownButton">☰</button>
+                        <button id="dropdownButton" type="button" aria-expanded="false" aria-controls="navList">☰</button>
                         <ul id="desktopNavList">
                             <li><a href="../../index.html">Home</a></li>
                             <li><a href="#caseFile">File</a></li>
@@ -37,7 +37,7 @@
         </header>
 
         <section id="metadata">
-            <h1>Lunaris Jewel Heist</h1>
+            <h2>Lunaris Jewel Heist</h2>
             <ul class="metaDataList">
                 <li><strong>Case Number:</strong><br>#XM-312</li>
                 <li><strong>Status:</strong><br>ACTIVE</li>
@@ -48,7 +48,7 @@
         <div id="lg-flex"> <!--992px display flex-->
             <section id="caseFileHeader">
                 <figure>
-                    <img src="../../images/lyra/caseFileFour.png" alt="Image of the Moonlit Vault Breach" id="caseFileImage">
+                    <img src="../../images/lyra/caseFileFour.png" alt="Image of the Lunaris Jewel Heist" id="caseFileImage">
                     <figcaption><strong>EVIDENCE PHOTO:</strong> VAULT INTERIOR POST-INCIDENT</figcaption>
                 </figure>
 
@@ -59,49 +59,49 @@
                 </ul>
             </section>
 
-            <div id="stolenObjects">
+            <section id="stolenObjects">
                 <h2 class="sectionTitle">STOLEN OBJECT</h2>
                 <p class="sectionDescription">A fractured gemstone fragment embedded within a ceremonial crown. Previously cataloged as decorative damage with no restoration value.</p>
-            </div>
+            </section>
         </div>
 
-        <div id="incidentSummary">
+        <section id="incidentSummary">
             <h2 class="sectionTitle">INCIDENT SUMMARY</h2>
             <p class="sectionDescription">At approximately 03:03 local time, security personnel reported a synchronized disorientation event lasting 10 seconds. Unlike prior incidents, partial system functionality remained active. Footage reveals a distortion field moving with intent toward a restricted display. The subject bypassed multiple high-value artifacts, removing only the damaged gemstone fragment. Notably, a secondary anomaly was detected: An unidentified heat signature appeared briefly in an adjacent corridor, then vanished.</p>
-        </div>
+        </section>
 
 
-        <div id="evidence">
+        <section id="evidence">
             <h2 class="sectionTitle">KEY EVIDENCE</h2>
             <ul>
                 <li class="infoListItems">Strongest arcane resonance recorded to date across all related cases</li>
                 <li class="infoListItems">Residual signature shows interference pattern (non-Lyra origin)</li>
                 <li class="infoListItems">Trace thermal distortion inconsistent with illusion magic</li>
             </ul>
-        </div>
+        </section>
 
-        <div id="notes">
+        <section id="notes">
             <h2 class="sectionTitle">INVESTIGATOR NOTES</h2>
             <ul>
                 <li class="infoListItems">First confirmed indication of external interference during operation</li>
                 <li class="infoListItems">Subject deviated from optimal extraction route</li>
                 <li class="infoListItems">Movement patterns suggest urgency rather than precision</li>
             </ul>
-        </div>
+        </section>
 
-        <div id="relatedIncidents">
+        <section id="relatedIncidents">
             <h2 class="sectionTitle">RELATED INCIDENTS</h2>
             <ul class="sectionDescription">
                 <li><a href="caseThree.html">Silver Market Disappearance (XM-305)</a></li>
-                <li><a href="#relatedIncident" id="relatedIncident"><span class="redacted">REDACTED</span> Investigation</a></li>
+                <li><span class="redacted">REDACTED</span></li>
                 <li><a href="caseOne.html">Moonlit Vault Breach (XM-301)</a></li>
             </ul>
-        </div>
+        </section>
     
     </main>
     <footer id="legal">
         <a href="#" class="footerLinks">PRIVACY POLICY</a>
-        <a href="#" class="footerLinks">TERMS OF USE</a>
+        <a href="../../character-information/lyra.html" class="footerLinks">BACK TO PROFILE</a>
         <a href="#home" class="footerLinks">BACK TO TOP</a>
 
         <p><small id="copyrightTag">&copy; iTab 2026</small></p>
