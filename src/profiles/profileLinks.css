@@ -3,7 +3,33 @@
     display: flex;
     margin: 0 1rem;
     gap: 1rem;
-    text-decoration: underline;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.profileDropdowns {
+    transition: max-height 0.3s ease;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.profileDropdowns li {
+    padding-bottom: 0.5rem;
+}
+
+.profileDropdowns.open {
+    max-height: 200px;
+}
+
+.profileDropdowns .open {
+    max-height: 200px;
+}
+
+.profileDropdowns li {
+    text-align: left;
 }
 
 @media (min-width: 800px) {

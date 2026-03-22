@@ -6,16 +6,3 @@
 .sectionDescription {
     margin: 0.5rem 2.9rem 1.5rem;
 }
-
-.redacted {
-    background-color: black;
-    color: transparent;
-    position: relative;
-}
-
-.redacted::after {
-    content: "████████";
-    color: #222;
-    position: absolute;
-    left: 0;
-}

@@ -18,3 +18,17 @@ body {
     background-color: rgb(0, 0, 0, 0.2);
     text-decoration: none;
 }
+
+
+.redacted {
+    background-color: black;
+    color: transparent;
+    position: relative;
+}
+
+.redacted::after {
+    content: "████████";
+    color: #222;
+    position: absolute;
+    left: 0;
+}
