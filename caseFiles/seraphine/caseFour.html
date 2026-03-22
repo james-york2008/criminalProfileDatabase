@@ -13,13 +13,13 @@
 </head>
 <body>
     <main>
-        <header>
+        <header id="home">
             <div class="blueBackground">
-                <nav id="home">
+                <nav>
                     <div id="titleWrapper">
                         <a href="../../index.html"><img src="../../images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo" class="itabLogo" loading="lazy"></a>
                         <h1>Interdimensional Threat Analysis Bureau</h1>
-                        <button id="dropdownButton">☰</button>
+                        <button id="dropdownButton" type="button" aria-expanded="false" aria-controls="navList">☰</button>
                         <ul id="desktopNavList">
                             <li><a href="../../index.html">Home</a></li>
                             <li><a href="#caseFile">File</a></li>
@@ -37,9 +37,9 @@
         </header>
 
         <section id="metadata">
-            <h1>Lunaris Counterstrike Event</h1>
+            <h2>Lunaris Counterstrike Event</h2>
             <ul class="metaDataList">
-                <li><strong>Case Number:</strong><br> XM-313</li>
+                <li><strong>Case Number:</strong><br>#XM-313</li>
                 <li><strong>Status:</strong><br>ACTIVE</li>
                 <li><strong>Date:</strong><br>12/22/25</li>
             </ul>
@@ -48,8 +48,8 @@
         <div id="lg-flex"> <!--992px display flex-->
             <section id="caseFileHeader">
                 <figure>
-                    <img src="../../images/seraphine/caseFileOne.png" alt="Image of the Dockside Cinder Event" id="caseFileImage">
-                    <figcaption><strong>EVIDENCE PHOTO:</strong>  LUANRIS ROYAL EXHIBITION HALL POST-INCIDENT</figcaption>
+                    <img src="../../images/seraphine/caseFileOne.png" alt="Image of the Lunaris Counterstrike Event" id="caseFileImage">
+                    <figcaption><strong>EVIDENCE PHOTO:</strong>  LUNARIS ROYAL EXHIBITION HALL POST-INCIDENT</figcaption>
                 </figure>
 
                 <ul id="eventInfo">
@@ -59,19 +59,19 @@
                 </ul>
             </section>
 
-            <div id="stolenObjects">
+            <section id="stolenObjects">
                 <h2 class="sectionTitle">STOLEN OBJECT</h2>
                 <p class="sectionDescription">Unknown — no confirmed theft. Residual energy suggests attempted incineration of an already-removed artifact.</p>
-            </div>
+            </section>
         </div>
 
-        <div id="incidentSummary">
+        <section id="incidentSummary">
             <h2 class="sectionTitle">INCIDENT SUMMARY</h2>
             <p class="sectionDescription">Moments after the incident recorded in XM-312, a secondary anomaly manifested within an adjacent corridor. Thermal readings spiked abruptly, followed by a concentrated ignition event. Unlike prior cases, the fire failed to fully consume its target. Surveillance data shows flame displacement—suggesting interference or obstruction during ignition. A distortion field (matching XM-312 subject profile) was detected exiting the area immediately prior to full ignition.</p>
-        </div>
+        </section>
 
 
-        <div id="evidence">
+        <section id="evidence">
             <h2 class="sectionTitle">KEY EVIDENCE</h2>
             <ul>
                 <li class="infoListItems">Dual-signature interference (thermal + refractive)</li>
@@ -79,28 +79,28 @@
                 <li class="infoListItems">Residual arcane backlash consistent with interrupted spellwork</li>
                 <li class="infoListItems">Spatial distortion overlapping ignition zone</li>
             </ul>
-        </div>
+        </section>
 
-        <div id="notes">
+        <section id="notes">
             <h2 class="sectionTitle">INVESTIGATOR NOTES</h2>
             <ul>
-                <li class="infoListItems">First confirmed interaction between Seraphine Emberbveil and Lyra Moonshard</li>
+                <li class="infoListItems">First confirmed interaction between Seraphine Emberveil and Lyra Moonshard</li>
                 <li class="infoListItems">Subject Emberveil deviated from prior behavior</li>
             </ul>
-        </div>
+        </section>
 
-        <div id="relatedIncidents">
+        <section id="relatedIncidents">
             <h2 class="sectionTitle">RELATED INCIDENTS</h2>
             <ul class="sectionDescription">
                 <li><a href="../lyra/caseFour.html">Lunaris Jewel Heist (XM-312)</a></li>
-                <li><a href="caseThree.html">Emberglass Cathedral Incident (XM-309)</a>
+                <li><a href="caseThree.html">Emberglass Cathedral Incident (XM-309)</a></li>
             </ul>
-        </div>
+        </section>
     
     </main>
     <footer id="legal">
         <a href="#" class="footerLinks">PRIVACY POLICY</a>
-        <a href="#" class="footerLinks">TERMS OF USE</a>
+        <a href="../../character-information/seraphine.html" class="footerLinks">BACK TO PROFILE</a>
         <a href="#home" class="footerLinks">BACK TO TOP</a>
 
         <p><small id="copyrightTag">&copy; iTab 2026</small></p>

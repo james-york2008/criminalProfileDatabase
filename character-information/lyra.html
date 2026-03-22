@@ -13,13 +13,13 @@
 </head>
 <body>
     <main>
-        <header>
+        <header id="home">
             <div class="blueBackground">
-                <nav id="home">
+                <nav>
                     <div id="titleWrapper">
                         <a href="../index.html"><img src="../images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo" class="itabLogo" loading="lazy"></a>
                         <h1>Interdimensional Threat Analysis Bureau</h1>
-                        <button id="dropdownButton">☰</button>
+                        <button id="dropdownButton" type="button" aria-expanded="false" aria-controls="navList">☰</button>
                         <ul id="desktopNavList">
                             <li><a href="../index.html">Home</a></li>
                             <li><a href="#profile">Profile</a></li>
@@ -39,21 +39,21 @@
         <section id="profile">
             <img src="../images/lyra/lyra.png" alt="Mugshot of Lyra Moonshard" loading="lazy" class="profileImage">
             <div id="criminalInfo">
-                <h1>Criminal Profile</h1>
+                <h2>Criminal Profile</h2>
                 <dl>
-                    <dt>Name:</dt>
+                    <dt>Name</dt>
                     <dd>Lyra Moonshard</dd>
 
-                    <dt>Alias:</dt>
+                    <dt>Alias</dt>
                     <dd>The Silver Whisperer</dd>
 
-                    <dt>Age:</dt>
+                    <dt>Age</dt>
                     <dd>27</dd>
 
-                    <dt>Height:</dt>
+                    <dt>Height</dt>
                     <dd>5'7"</dd>
 
-                    <dt>Weight:</dt>
+                    <dt>Weight</dt>
                     <dd>130 lbs.</dd>
                 </dl>
             </div>
@@ -66,18 +66,18 @@
 
         <section id="profileLinks">
             <div class="dropdown">
-                <button class="button" id="criminalRecordButton">CRIMINAL RECORD</button>            
-                <ul class="profileDropdowns hidden" id="criminalRecordDropdown">
+                <button class="button dropdownButton"aria-expanded="false" aria-controls="criminalRecordDropdown">CRIMINAL RECORD</button>            
+                <ul class="profileDropdowns hidden">
                     <li><a href="../caseFiles/lyra/caseFour.html">Theft</a></li>
                     <li><a href="../caseFiles/lyra/caseOne.html">Theft</a></li>
                 </ul>
             </div>
 
             <div class="dropdown">
-                <button class="button" id="knownAssociatesButton">KNOWN ASSOCIATES</button>
+                <button class="button dropdownButton" aria-expanded="false" aria-controls="criminalRecordDropdown">KNOWN ASSOCIATES</button>
                 <ul class="profileDropdowns hidden" id="knownAssociatesDropdown">
                     <li><a href="seraphine.html">Seraphine Emberveil</a></li>
-                    <li><a href="knownAssociatesDropdown" class="redacted">REDACTED</a></li>
+                    <li><span class="redacted">REDACTED</span></li>
                 </ul>
             </div>
         </section>
@@ -85,28 +85,28 @@
         <section id="caseFiles">
             <article>
                 <a href="../caseFiles/lyra/caseOne.html">
-                    <img src="../images/lyra/caseFileOne.png" alt="Moonlit Vault Breach casee photo" loading="lazy">
+                    <img src="../images/lyra/caseFileOne.png" alt="Moonlit Vault Breach case photo" loading="lazy">
                     <h3>Moonlit Vault Breach</h3>
                 </a>
             </article>
 
             <article>
                 <a href="../caseFiles/lyra/caseTwo.html">
-                    <img src="../images/lyra/caseFileTwo.png" alt="Phantom Treasury Incident casee photo" loading="lazy">
+                    <img src="../images/lyra/caseFileTwo.png" alt="Phantom Treasury Incident case photo" loading="lazy">
                     <h3>Phantom Treasury Incident</h3>
                 </a>
             </article>
 
             <article>
                 <a href="../caseFiles/lyra/caseThree.html">
-                    <img src="../images/lyra/caseFileThree.png" alt="Silver Market Disappearance casee photo" loading="lazy">
+                    <img src="../images/lyra/caseFileThree.png" alt="Silver Market Disappearance case photo" loading="lazy">
                     <h3>Silver Market Disappearance</h3>
                 </a>
             </article>
 
             <article>
                 <a href="../caseFiles/lyra/caseFour.html">
-                    <img src="../images/lyra/caseFileFour.png" alt="Lunaris Jewel Heist casee photo" loading="lazy">
+                    <img src="../images/lyra/caseFileFour.png" alt="Lunaris Jewel Heist case photo" loading="lazy">
                     <h3>Lunaris Jewel Heist</h3>
                 </a>
             </article>

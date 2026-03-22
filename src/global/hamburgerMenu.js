@@ -5,5 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     btn.addEventListener('click', function() {   
         navList.classList.toggle('d-none')
         navList.classList.toggle('d-show')
+
+        const expanded = btn-this.getAttribute('aria-expanded') === 'true'
+        btn.setAttribute('aria-expanded', !expanded)
     })
 })

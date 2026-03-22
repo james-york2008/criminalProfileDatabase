@@ -13,13 +13,13 @@
 </head>
 <body>
     <main>
-        <header>
+        <header id="home">
             <div class="blueBackground">
-                <nav id="home">
+                <nav>
                     <div id="titleWrapper">
                         <a href="index.html"><img src="images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo" class="itabLogo" loading="lazy"></a>
                         <h1>Interdimensional Threat Analysis Bureau</h1>
-                        <button id="dropdownButton">☰</button>
+                        <button id="dropdownButton" type="button" aria-expanded="false" aria-controls="navList">☰</button>
                         <ul id="desktopNavList">
                             <li><a href="#home">Home</a></li>
                             <li><a href="#criminalProfiles">Cases</a></li>
@@ -40,7 +40,7 @@
             <h2>Criminal Profiles</h2>
             <form id="searchBar">
                 <label id="searchProfilesLabel" for="searchInput">Search Profiles</label>
-                <input id="searchInput" placeholder="Search by name, or alias" type="text">
+                <input id="searchInput" name="search" placeholder="Search by name, or alias" type="text">
                 <button type="submit" id="search">Search</button>
                 <fieldset>
                     <legend>FILTER BY STATUS:</legend>
@@ -62,8 +62,8 @@
 
             <div id="profileCards">
                 <article class="profileCard" data-threat="1" data-status="underSurveillance" data-search="lyra moonshard rift walker">
-                    <a href="character-information/lyra.html"><img class="profileImage" src="images/lyra/lyra.png" alt="Mugshot of Lyra Moonshard" loading="lazy">
-                    <h3>Lyra Moonshard</h3></a>
+                    <img class="profileImage" src="images/lyra/lyra.png" alt="Mugshot of Lyra Moonshard, also known as the Silver Whisperer" loading="lazy">
+                    <h3>Lyra Moonshard</h3>
                     <p>Alias: The Silver Whisperer</p>
                     <p>Threat: Low Risk</p>
                     <p>Status: Under surveillance</p>
@@ -71,8 +71,8 @@
                 </article>
 
                 <article class="profileCard" data-threat="3" data-status="mostWanted" data-search="seraphine emberveil ashen empress">
-                    <a href="character-information/seraphine.html"><img class="profileImage" src="images/seraphine/seraphine.png" alt="Mugshot of Seraphine Emberveil" loading="lazy">
-                    <h3>Seraphine Emberveil</h3></a>
+                    <img class="profileImage" src="images/seraphine/seraphine.png" alt="Mugshot of Seraphine Emberveil, also known as the Cinder Duchess" loading="lazy">
+                    <h3>Seraphine Emberveil</h3>
                     <p>Alias: The Cinder Duchess</p>
                     <p>Threat: Severe Threat</p>
                     <p>Status: Most wanted</p>
@@ -92,7 +92,5 @@
 
     <script src="src/global/hamburgerMenu.js"></script>
     <script src="src/index/filter.js"></script>
-    <script src="src/index/search.js"></script>
-    <script src="src/index/fetchCharacters.js"></script>
 </body>
 </html>
