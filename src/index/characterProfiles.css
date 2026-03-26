@@ -25,6 +25,10 @@
     font-size: 1.5rem;
 }
 
+.hidden {
+    display: none;
+}
+
 @media (min-width: 540px) {
     #profileCards {
         flex-direction: row;

@@ -1,0 +1,276 @@
+{
+  "characters": [
+    {
+      "id": "lyra-moonshard",
+      "name": "Lyra Moonshard",
+      "alias": "The Silver Whisperer",
+      "age": 27,
+      "height": "5'7\"",
+      "weight": "130 lbs",
+      "description": "A quiet illusionist known for infiltrating royal vaults using moonlight-based glamour magic. Lyra prefers stealth and rarely harms anyone, leaving only faint silver motes behind after a heist.",
+      "image": "../images/lyra/lyra.png",
+      "knownAssociates": ["Seraphine Emberveil", "REDACTED"],
+      "caseFiles": [
+        {
+          "title": "Moonlit Vault Breach",
+          "caseNumber": "XM-301",
+          "status": "ACTIVE",
+          "date": "12/14/25",
+          "location": "Silver Crest Royal Bank",
+          "time": "02:17 AM",
+          "witnesses": "Two guards",
+          "stolenObjects": "A small, silver-inlaid prism mounted within a decorative housing.",
+          "image": "../images/lyra/caseFileOne.png",
+          "evidence": [
+            "Lunar residue found on the scene",
+            "Low frequency Arcane signature",
+            "No biological or material traces recovered"
+          ],
+          "investigatorNotes": [
+            "Target selection inconsistent with known theft patterns",
+            "High value assets ignored",
+            "Suspect displayed a strong aversion to collateral damage"
+          ],
+          "relatedIncidents": ["Phantom Treasury Incident"]
+        },
+        {
+          "title": "Phantom Treasury Incident",
+          "caseNumber": "XM-298",
+          "status": "ACTIVE",
+          "date": "11/03/25",
+          "location": "Halcyon Central Treasury Annex",
+          "time": "01:42 AM",
+          "witnesses": "None",
+          "stolenObjects": "A crystalline ledger prism used historically for ceremonial accounting rituals.",
+          "image": "../images/lyra/caseFileTwo.png",
+          "evidence": [
+            "Residual arcane signature consistent with refractive illusion magic",
+            "Temporary data desynchronization across multiple storage systems",
+            "Silver particulate traces detected near archival vault (dissipated within minutes)"
+          ],
+          "investigatorNotes": [
+            "Target selection mirrors Case XM-301",
+            "Subject demonstrates continued disinterest in monetary assets",
+            "Removed object emits low-level resonance under arcane scanning"
+          ],
+          "relatedIncidents": ["Moonlit Vault Breach", "Silver Market Disappearance"]
+        },
+        {
+          "title": "Silver Market Disappearance",
+          "caseNumber": "XM-305",
+          "status": "ACTIVE",
+          "date": "12/01/25",
+          "location": "Elaris Grand Market District",
+          "time": "09:15 PM",
+          "witnesses": "Multiple civilians",
+          "stolenObjects": "An ornamental pendulum device sold as a novelty timepiece.",
+          "image": "../images/lyra/caseFileThree.png",
+          "evidence": [
+            "Concentrated lunar-aligned residue at point of disappearance",
+            "Minor temporal distortion recorded on nearby enchanted clocks",
+            "No physical traces recovered"
+          ],
+          "investigatorNotes": [
+            "Subject capable of operating in high-density civilian environments undetected",
+            "Increasing precision suggests familiarity with artifact identification",
+            "Item classification updated: Arcane Object — Pending Analysis"
+          ],
+          "relatedIncidents": ["Phantom Treasury Incident", "Lunaris Jewel Heist"]
+        },
+        {
+          "title": "Lunaris Jewel Heist",
+          "caseNumber": "XM-312",
+          "status": "ACTIVE",
+          "date": "12/22/25",
+          "location": "Lunaris Royal Exhibition Hall",
+          "time": "03:03 AM",
+          "witnesses": "Three guards (disorientation reported)",
+          "stolenObjects": "A fractured gemstone fragment embedded within a ceremonial crown.",
+          "image": "../images/lyra/caseFileFour.png",
+          "evidence": [
+            "Strongest arcane resonance recorded to date",
+            "Residual signature shows interference pattern (non-Lyra origin)",
+            "Trace thermal distortion inconsistent with illusion magic"
+          ],
+          "investigatorNotes": [
+            "First confirmed indication of external interference during operation",
+            "Subject deviated from optimal extraction route",
+            "Movement patterns suggest urgency rather than precision"
+          ],
+          "relatedIncidents": ["Silver Market Disappearance", "Moonlit Vault Breach"]
+        }
+      ],
+      "threat": "1",
+      "threatLabel": "Low Risk",
+      "status": "underSurveillance",
+      "statusLabel": "Under surveillance",
+      "search": "lyra moonshard the rift walker"
+    }, {
+      "id": "kael-nightshade",
+      "name": "Kael Nightshade",
+      "alias": "The Shadow Broker",
+      "age": 35,
+      "height": "6'0\"",
+      "weight": "175 lbs",
+      "description": "An elusive information broker who trades secrets for influence. Kael has a network spanning both the criminal underworld and high society, often manipulating events behind the scenes. Known for staying in the shadows, he rarely acts directly but his information has led to multiple high-profile heists and sabotage incidents.",
+      "image": "../images/kael/kael.png",
+      "knownAssociates": ["Lyra Moonshard", "Seraphine Emberveil"],
+      "caseFiles": [
+        {
+          "title": "Halcyon Vault Compromise",
+          "caseNumber": "XM-501",
+          "status": "ACTIVE",
+          "date": "03/10/26",
+          "location": "Halcyon Central Bank",
+          "time": "01:05 AM",
+          "witnesses": "Security cameras captured blurred figure",
+          "stolenObjects": "Encrypted access keys for multiple high-security vaults",
+          "image": "../images/kael/caseFileOne.png",
+          "evidence": [
+            "Digital traces of unauthorized network access",
+            "Encrypted logs hint at third-party coordination",
+            "Unidentified fingerprint residue"
+          ],
+          "investigatorNotes": [
+            "Suspect acts as coordinator, not executor",
+            "Targets valuable digital assets",
+            "Likely involved with other high-profile criminals"
+          ],
+          "relatedIncidents": ["Moonlit Vault Breach", "Ashen Gala Robbery"]
+        },
+        {
+          "title": "Seraphine’s Diversion Coordination",
+          "caseNumber": "XM-503",
+          "status": "ACTIVE",
+          "date": "02/05/26",
+          "location": "Elaris Grand Market District",
+          "time": "02:45 AM",
+          "witnesses": "Market guards noticed suspicious behavior",
+          "stolenObjects": "None directly, suspected role in facilitating heist",
+          "image": "../images/kael/caseFileTwo.png",
+          "evidence": [
+            "Intercepted communications with Seraphine",
+            "Pattern of previous market disturbances",
+            "Suspicious financial transactions pre-incident"
+          ],
+          "investigatorNotes": [
+            "Provides intelligence and strategic coordination",
+            "Avoids direct confrontation",
+            "Evidence links him to multiple other heists indirectly"
+          ],
+          "relatedIncidents": ["Ember Market Incident", "Ashen Gala Robbery"]
+        },
+        {
+          "title": "Lyra Network Interception",
+          "caseNumber": "XM-510",
+          "status": "ACTIVE",
+          "date": "12/18/25",
+          "location": "Silver Crest Royal Bank",
+          "time": "02:17 AM",
+          "witnesses": "Security logs only",
+          "stolenObjects": "Intel on security schedules and guard rotations",
+          "image": "../images/kael/caseFileThree.png",
+          "evidence": [
+            "Accessed confidential reports remotely",
+            "No physical traces on site",
+            "Coordination timing aligns with Lyra’s heist"
+          ],
+          "investigatorNotes": [
+            "Likely supplied Lyra with target intelligence",
+            "Operates with minimal direct exposure",
+            "Strong network of informants evident"
+          ],
+          "relatedIncidents": ["Moonlit Vault Breach"]
+        }
+      ],
+      "threat": "2",
+      "threatLabel": "Moderate Risk",
+      "status": "underSurveillance",
+      "statusLabel": "Under surveillance",
+      "search": "kael nightshade the shadow broker"
+    }, {
+      "id": "selene-darkveil",
+      "name": "Selene Darkveil",
+      "alias": "The Midnight Siren",
+      "age": 29,
+      "height": "5'9\"",
+      "weight": "140 lbs",
+      "description": "A cunning rogue who uses sound and shadow manipulation to carry out high-profile thefts and distractions. Selene has a personal vendetta against Kael Nightshade and often crosses paths with Lyra Moonshard, either as a competitor or temporary ally. Known for leaving haunting melodies at the scene of her crimes, earning her the moniker 'Midnight Siren.'",
+      "image": "../images/selene/selene.png",
+      "knownAssociates": ["Kael Nightshade", "Lyra Moonshard"],
+      "caseFiles": [
+        {
+          "title": "Ashen Gala Heist",
+          "caseNumber": "XM-520",
+          "status": "ACTIVE",
+          "date": "02/14/26",
+          "location": "Ashen Grand Opera House",
+          "time": "11:48 PM",
+          "witnesses": "Multiple gala attendees",
+          "stolenObjects": "A collection of ceremonial musical instruments",
+          "image": "../images/selene/caseFileOne.png",
+          "evidence": [
+            "Residual sonic anomalies detected",
+            "Security footage shows shadowy figure slipping between guests",
+            "No physical entry point forced"
+          ],
+          "investigatorNotes": [
+            "Targeted high-value ceremonial instruments",
+            "Operates with precise timing",
+            "Evidence indicates she may be aware of Kael’s intel operations"
+          ],
+          "relatedIncidents": ["Halcyon Vault Compromise", "Seraphine’s Diversion Coordination"]
+        },
+        {
+          "title": "Lunaris Night Market Interference",
+          "caseNumber": "XM-525",
+          "status": "ACTIVE",
+          "date": "12/30/25",
+          "location": "Lunaris Grand Market District",
+          "time": "10:22 PM",
+          "witnesses": "Market vendors reported strange sounds and flickering shadows",
+          "stolenObjects": "Several rare gemstones",
+          "image": "../images/selene/caseFileTwo.png",
+          "evidence": [
+            "Sonic disruptions caused temporary panic",
+            "Trace residues of phosphorescent dust",
+            "Patterns suggest diversion coordinated with another actor (Lyra)"
+          ],
+          "investigatorNotes": [
+            "Operates independently, but links to Lyra’s heists are suspected",
+            "Expert in psychological and sensory manipulation",
+            "Avoids leaving traditional forensic evidence"
+          ],
+          "relatedIncidents": ["Silver Market Disappearance", "Moonlit Vault Breach"]
+        },
+        {
+          "title": "Kael Intelligence Breach",
+          "caseNumber": "XM-530",
+          "status": "ACTIVE",
+          "date": "03/22/26",
+          "location": "Halcyon Central Bank",
+          "time": "01:05 AM",
+          "witnesses": "Internal network logs only",
+          "stolenObjects": "Confidential heist schedules",
+          "image": "../images/selene/caseFileThree.png",
+          "evidence": [
+            "Compromised communication channels",
+            "Evidence of coordination with Lyra",
+            "Encrypted messages traced back to Selene’s network"
+          ],
+          "investigatorNotes": [
+            "Likely working to intercept Kael’s intel",
+            "Operates with extreme stealth and precision",
+            "Ties to previous heists indicate long-term planning"
+          ],
+          "relatedIncidents": ["Lyra Network Interception", "Halcyon Vault Compromise"]
+        }
+      ],
+      "threat": "3",
+      "threatLabel": "Severe Threat",
+      "status": "mostWanted",
+      "statusLabel": "Most wanted",
+      "search": "selene darkveil the midnight siren"
+    }
+  ]
+}
