@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Profile</title>
+    <link rel="stylesheet" type="text/css" href="src/global/base.css">
+    <link rel="stylesheet" type="text/css" href="src/global/navbar.css">
+    <link rel="stylesheet" type="text/css" href="src/profiles/profileLinks.css">
+    <link rel="stylesheet" type="text/css" href="src/profiles/profiles.css">
+    <link rel="stylesheet" type="text/css" href="src/profiles/caseFiles.css">
+    <link rel="stylesheet" type="text/css" href="src/global/footer.css">
+</head>
+<body>
+    <main>
+        <header id="home">
+            <div class="blueBackground">
+                <nav>
+                    <div id="titleWrapper">
+                        <a href="../index.html"><img src="../images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo" class="itabLogo" loading="lazy"></a>
+                        <h1>Interdimensional Threat Analysis Bureau</h1>
+                        <button id="dropdownButton" type="button" aria-expanded="false" aria-controls="navList">☰</button>
+                        <ul id="desktopNavList">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="#profile">Profile</a></li>
+                            <li><a href="#legal">Legal</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="d-none" id="navList">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#profile">Profile</a></li>
+                        <li><a href="#legal">Legal</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="profile">
+            <img id="profileImage" alt="Character Image" loading="lazy" class="profileImage">
+            <div id="criminalInfo">
+                <h2>Criminal Profile</h2>
+                <dl>
+                    <dt>Name</dt>
+                    <dd id="profileName"></dd>
+
+                    <dt>Alias</dt>
+                    <dd id="profileAlias"></dd>
+
+                    <dt>Age</dt>
+                    <dd id="profileAge"></dd>
+
+                    <dt>Height</dt>
+                    <dd id="profileHeight"></dd>
+
+                    <dt>Weight</dt>
+                    <dd id="profileWeight"></dd>
+                </dl>
+            </div>
+
+            <div id="description">
+                <h2>Description: </h2>
+                <p id="profileDescription"></p>
+            </div>
+        </section>
+
+        <section id="profileLinks">
+            <div class="dropdown">
+                <button class="button dropdownButton"aria-expanded="false" aria-controls="criminalRecordDropdown">CRIMINAL RECORD</button>            
+                <ul id="criminalRecordList" class="profileDropdowns hidden">
+
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="button dropdownButton" aria-expanded="false" aria-controls="knownAssociatesDropdown">KNOWN ASSOCIATES</button>
+                <ul id="associatesList" class="profileDropdowns hidden" id="knownAssociatesDropdown">
+                
+                </ul>
+            </div>
+        </section>
+
+        <section id="caseFiles">
+            <h2>Case Files:</h2>
+            
+        </section>
+
+            
+    </main>
+    <footer id="legal">
+        <a href="#" class="footerLinks">PRIVACY POLICY</a>
+        <a href="#" class="footerLinks">TERMS OF USE</a>
+        <a href="#home" class="footerLinks">BACK TO TOP</a>
+
+        <p><small id="copyrightTag">&copy; iTab 2026</small></p>
+    </footer>
+    
+    <script src="src/global/hamburgerMenu.js"></script>
+    <script src="src/profiles/profileDropdowns.js"></script>
+    <script type="module" src="src/profiles/profilePage.js"></script>
+</body>
+</html>

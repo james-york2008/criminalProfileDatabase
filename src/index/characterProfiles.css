@@ -25,10 +25,27 @@
     font-size: 1.5rem;
 }
 
+.hidden {
+    display: none;
+}
+
+#seeMoreCharacters {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin: 2rem 0;
+    color: white;
+    background-color: green ;
+}
+
+.expandedSeeMoreCharacters {
+    background-color: red !important;
+}
+
 @media (min-width: 540px) {
     #profileCards {
         flex-direction: row;
         margin-top: 2rem;
+        flex-wrap: wrap;
     }
 
     .profileImage {
@@ -36,6 +53,11 @@
     }
 
     .profileCard {
-        width: 50%;
+        width: 30%;
+    }
+
+    #seeMoreCharacters {
+        padding: 0.5rem 3rem;
+        cursor: pointer;
     }
 }

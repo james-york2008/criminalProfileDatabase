@@ -7,6 +7,11 @@
     margin-top: 2rem;
 }
 
+#caseFiles h2 {
+    width: 100%;
+    margin: 0 0 3rem 1.5rem;
+}
+
 #caseFiles h3 {
     width: 125px;
     color: black;
@@ -19,7 +24,7 @@
 }
 
 #caseFiles img {
-    height: 75%;
+    max-width: 150%;
     border-radius: 10px;
 }
 
@@ -36,5 +41,14 @@
     #caseFiles article:hover {
         transform: scale(1.03);
         cursor: pointer;
+    }
+
+    #caseFiles img {
+        width: 90%;
+    }
+
+    
+    #caseFiles article {
+        height: 500px;
     }
 }

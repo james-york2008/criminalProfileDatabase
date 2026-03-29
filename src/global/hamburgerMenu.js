@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navList.classList.toggle('d-none')
         navList.classList.toggle('d-show')
 
-        const expanded = btn-this.getAttribute('aria-expanded') === 'true'
-        btn.setAttribute('aria-expanded', !expanded)
+        const expanded = btn.getAttribute('aria-expanded') === 'true'
+        btn.setAttribute('aria-expanded', (!expanded).toString())
     })
 })
