@@ -3,7 +3,7 @@
     font-size: 2rem;
 }
 
-.metaDataList {
+#metaDataList {
     text-align: center;
     padding-top: 1rem;
     list-style: none;
@@ -12,7 +12,17 @@
     padding-bottom: 1rem;
 }
 
-.metaDataList li {
+.active {
+    color: green;
+    font-weight: 700;
+}
+
+.closed {
+    color: red;
+    font-weight: 700;
+}
+
+#metaDataList li {
     flex: 1;
 }
 
@@ -20,15 +30,9 @@
     border-radius: 10px;
 }
 
-#caseFileImage, figure figcaption {
+#caseFileImage {
     width: 50%;
     margin: 0 25%;
-}
-
-
-
-figcaption {
-    padding-left: 1rem;
 }
 
 #eventInfo {
@@ -56,16 +60,16 @@ figcaption {
         font-size: 1.3rem;
     }
 
-    .metaDataList li{
+    #metaDataList li{
         border: 2px solid rgba(0, 0, 0, 0.1);
         padding: 1rem;
     }
 
-    .metaDataList strong {
+    #metaDataList strong {
         font-size: 1.3rem;
     }
 
-    #caseFileImage, figure figcaption {
+    #caseFileImage {
         width: 100%;
         margin: 0;
     }

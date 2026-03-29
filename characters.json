@@ -8,8 +8,17 @@
       "height": "5'7\"",
       "weight": "130 lbs",
       "description": "A quiet illusionist known for infiltrating royal vaults using moonlight-based glamour magic. Lyra prefers stealth and rarely harms anyone, leaving only faint silver motes behind after a heist.",
-      "image": "../images/lyra/lyra.png",
       "knownAssociates": ["Seraphine Emberveil", "REDACTED"],
+      "criminalRecord": [
+        {
+          "charge": "Larceny",
+          "caseNumber": "XM-301"
+        },
+        {
+          "charge": "Theft",
+          "caseNumber": "XM-305"  
+        }
+      ],
       "caseFiles": [
         {
           "title": "Moonlit Vault Breach",
@@ -19,8 +28,9 @@
           "location": "Silver Crest Royal Bank",
           "time": "02:17 AM",
           "witnesses": "Two guards",
-          "stolenObjects": "A small, silver-inlaid prism mounted within a decorative housing.",
-          "image": "../images/lyra/caseFileOne.png",
+          "stolenObjects": "A small, silver-inlaid prism mounted within a decorative housing. Previously classified as a ceremonial charm with no value, no threat designation, and no recorded strategic value.",
+          "incidentSummary": "A highly controlled infiltration of Silver Crest Royal Bank resulted in the extraction of a seemingly low-value ceremonial prism. No alarms were triggered, and guards reported only brief disorientation. The suspect ignored high-value assets, reinforcing a pattern of targeting obscure arcane objects.",
+          "image": "caseFileOne",
           "evidence": [
             "Lunar residue found on the scene",
             "Low frequency Arcane signature",
@@ -31,7 +41,13 @@
             "High value assets ignored",
             "Suspect displayed a strong aversion to collateral damage"
           ],
-          "relatedIncidents": ["Phantom Treasury Incident"]
+          "relatedIncidents": [
+            {
+              "incidentName": "Phantom Treasury Incident",
+              "relatedCharacter": "lyra-moonshard",
+              "caseNumber": "XM-298"
+            }
+          ]
         },
         {
           "title": "Phantom Treasury Incident",
@@ -41,8 +57,8 @@
           "location": "Halcyon Central Treasury Annex",
           "time": "01:42 AM",
           "witnesses": "None",
-          "stolenObjects": "A crystalline ledger prism used historically for ceremonial accounting rituals.",
-          "image": "../images/lyra/caseFileTwo.png",
+          "stolenObjects": "A crystalline ledger prism used historically for ceremonial accounting rituals.","incidentSummary": "An undetected breach of the Halcyon Treasury Annex led to the disappearance of a crystalline ledger artifact. No witnesses or forced entry were recorded. System irregularities suggest the use of illusion-based interference during the extraction.",
+          "image": "caseFileTwo",
           "evidence": [
             "Residual arcane signature consistent with refractive illusion magic",
             "Temporary data desynchronization across multiple storage systems",
@@ -53,7 +69,18 @@
             "Subject demonstrates continued disinterest in monetary assets",
             "Removed object emits low-level resonance under arcane scanning"
           ],
-          "relatedIncidents": ["Moonlit Vault Breach", "Silver Market Disappearance"]
+          "relatedIncidents": [
+            {
+              "incidentName": "Moonlit Vault Breach", 
+              "relatedCharacter": "lyra-moonshard",
+              "caseNumber": "XM-301"
+            },
+            {
+              "incidentName": "Silver Market Disappearance",
+              "relatedCharacter": "lyra-moonshard",
+              "caseNumber": "XM-305"
+            }
+          ]
         },
         {
           "title": "Silver Market Disappearance",
@@ -64,7 +91,8 @@
           "time": "09:15 PM",
           "witnesses": "Multiple civilians",
           "stolenObjects": "An ornamental pendulum device sold as a novelty timepiece.",
-          "image": "../images/lyra/caseFileThree.png",
+          "incidentSummary": "In a crowded public setting, the suspect removed a pendulum device without detection. Witnesses reported brief visual distortion and environmental anomalies. The operation demonstrates increased confidence and precision in high-traffic environments.",
+          "image": "caseFileThree",
           "evidence": [
             "Concentrated lunar-aligned residue at point of disappearance",
             "Minor temporal distortion recorded on nearby enchanted clocks",
@@ -73,9 +101,21 @@
           "investigatorNotes": [
             "Subject capable of operating in high-density civilian environments undetected",
             "Increasing precision suggests familiarity with artifact identification",
-            "Item classification updated: Arcane Object — Pending Analysis"
+            "Item classification updated: Arcane Object â€” Pending Analysis"
           ],
-          "relatedIncidents": ["Phantom Treasury Incident", "Lunaris Jewel Heist"]
+          "relatedIncidents": [
+            {
+              "incidentName": "Phantom Treasury Incident",
+              "relatedCharacter": "lyra-moonshard",
+              "caseNumber": "XM-298"
+            },
+            {
+              "incidentName": "Lunaris Jewel Heist",
+              "relatedCharacter": "lyra-moonshard",
+              "caseNumber": "XM-312"
+            }
+            
+          ]
         },
         {
           "title": "Lunaris Jewel Heist",
@@ -86,7 +126,8 @@
           "time": "03:03 AM",
           "witnesses": "Three guards (disorientation reported)",
           "stolenObjects": "A fractured gemstone fragment embedded within a ceremonial crown.",
-          "image": "../images/lyra/caseFileFour.png",
+          "incidentSummary": "A ceremonial gemstone fragment was extracted during a high-security exhibition. Unlike prior incidents, evidence suggests interference from a secondary unknown source, resulting in irregular movement patterns and elevated arcane activity.",
+          "image": "caseFileFour",
           "evidence": [
             "Strongest arcane resonance recorded to date",
             "Residual signature shows interference pattern (non-Lyra origin)",
@@ -97,7 +138,18 @@
             "Subject deviated from optimal extraction route",
             "Movement patterns suggest urgency rather than precision"
           ],
-          "relatedIncidents": ["Silver Market Disappearance", "Moonlit Vault Breach"]
+          "relatedIncidents": [
+            {
+              "incidentName": "Silver Market Disappearance",
+              "relatedCharacter": "lyra-moonshard",
+              "caseNumber" : "XM-305"
+            }, 
+            {
+              "incidentName": "Moonlit Vault Breach",
+              "relatedCharacter": "lyra-moonshard",
+              "caseNumber": "XM-301"
+            }
+          ]
         }
       ],
       "threat": "1",
@@ -105,7 +157,8 @@
       "status": "underSurveillance",
       "statusLabel": "Under surveillance",
       "search": "lyra moonshard the rift walker"
-    }, {
+    }, 
+    {
       "id": "kael-nightshade",
       "name": "Kael Nightshade",
       "alias": "The Shadow Broker",
@@ -113,8 +166,17 @@
       "height": "6'0\"",
       "weight": "175 lbs",
       "description": "An elusive information broker who trades secrets for influence. Kael has a network spanning both the criminal underworld and high society, often manipulating events behind the scenes. Known for staying in the shadows, he rarely acts directly but his information has led to multiple high-profile heists and sabotage incidents.",
-      "image": "../images/kael/kael.png",
       "knownAssociates": ["Lyra Moonshard", "Seraphine Emberveil"],
+      "criminalRecord": [
+        {
+          "charge": "Conspiracy",
+          "caseNumber": "XM-501"
+        },
+        {
+          "charge": "Intelligence Brokerage",
+          "caseNumber": "XM-510"
+        }
+      ],
       "caseFiles": [
         {
           "title": "Halcyon Vault Compromise",
@@ -125,7 +187,8 @@
           "time": "01:05 AM",
           "witnesses": "Security cameras captured blurred figure",
           "stolenObjects": "Encrypted access keys for multiple high-security vaults",
-          "image": "../images/kael/caseFileOne.png",
+          "incidentSummary": "A coordinated breach targeting encrypted vault access keys was executed through digital infiltration rather than physical entry. Evidence suggests Kael acted as an orchestrator, enabling external actors to benefit from the compromised systems.",
+          "image": "caseFileOne",
           "evidence": [
             "Digital traces of unauthorized network access",
             "Encrypted logs hint at third-party coordination",
@@ -136,10 +199,21 @@
             "Targets valuable digital assets",
             "Likely involved with other high-profile criminals"
           ],
-          "relatedIncidents": ["Moonlit Vault Breach", "Ashen Gala Robbery"]
+          "relatedIncidents": [
+            {
+              "incidentName": "Moonlit Vault Breach",
+              "relatedCharacter": "lyra-moonshard",
+              "caseNumber": "XM-301"
+            },
+            {
+              "incidentName": "Ashen Gala Heist",
+              "relatedCharacter": "selene-darkveil",
+              "caseNumber": "XM-520"
+            }
+          ]
         },
         {
-          "title": "Seraphine’s Diversion Coordination",
+          "title": "Seraphine's Diversion Coordination",
           "caseNumber": "XM-503",
           "status": "ACTIVE",
           "date": "02/05/26",
@@ -147,7 +221,8 @@
           "time": "02:45 AM",
           "witnesses": "Market guards noticed suspicious behavior",
           "stolenObjects": "None directly, suspected role in facilitating heist",
-          "image": "../images/kael/caseFileTwo.png",
+          "incidentSummary": "Suspicious financial activity and intercepted communications indicate Kael facilitated a large-scale diversion within the market district. No direct theft occurred, but the disruption aligns with other coordinated criminal operations.",
+          "image": "caseFileTwo",
           "evidence": [
             "Intercepted communications with Seraphine",
             "Pattern of previous market disturbances",
@@ -158,7 +233,18 @@
             "Avoids direct confrontation",
             "Evidence links him to multiple other heists indirectly"
           ],
-          "relatedIncidents": ["Ember Market Incident", "Ashen Gala Robbery"]
+          "relatedIncidents": [
+            {
+              "incidentName": "Dockside Cinder Event",
+              "relatedCharacter": "seraphine-emberveil",
+              "caseNumber": "XM-284"
+            },
+            {
+              "incidentName": "Ashen Gala Heist",
+              "relatedCharacter": "selene-darkveil",
+              "caseNumber": "XM-520"
+            }
+          ]
         },
         {
           "title": "Lyra Network Interception",
@@ -169,18 +255,25 @@
           "time": "02:17 AM",
           "witnesses": "Security logs only",
           "stolenObjects": "Intel on security schedules and guard rotations",
-          "image": "../images/kael/caseFileThree.png",
+          "incidentSummary": "Confidential security data was extracted remotely just prior to a known Lyra Moonshard heist. Timing strongly suggests Kael supplied critical intelligence, reinforcing his role as a behind-the-scenes enabler.",
+          "image": "caseFileThree",
           "evidence": [
             "Accessed confidential reports remotely",
             "No physical traces on site",
-            "Coordination timing aligns with Lyra’s heist"
+            "Coordination timing aligns with Lyraâ€™s heist"
           ],
           "investigatorNotes": [
             "Likely supplied Lyra with target intelligence",
             "Operates with minimal direct exposure",
             "Strong network of informants evident"
           ],
-          "relatedIncidents": ["Moonlit Vault Breach"]
+          "relatedIncidents": [
+            {
+              "incidentName": "Moonlit Vault Breach",
+              "relatedCharacter": "lyra-moonshard",
+              "caseNumber": "XM-301"
+            }
+          ]
         }
       ],
       "threat": "2",
@@ -188,7 +281,8 @@
       "status": "underSurveillance",
       "statusLabel": "Under surveillance",
       "search": "kael nightshade the shadow broker"
-    }, {
+    }, 
+    {
       "id": "selene-darkveil",
       "name": "Selene Darkveil",
       "alias": "The Midnight Siren",
@@ -196,8 +290,17 @@
       "height": "5'9\"",
       "weight": "140 lbs",
       "description": "A cunning rogue who uses sound and shadow manipulation to carry out high-profile thefts and distractions. Selene has a personal vendetta against Kael Nightshade and often crosses paths with Lyra Moonshard, either as a competitor or temporary ally. Known for leaving haunting melodies at the scene of her crimes, earning her the moniker 'Midnight Siren.'",
-      "image": "../images/selene/selene.png",
       "knownAssociates": ["Kael Nightshade", "Lyra Moonshard"],
+      "criminalRecord": [
+        {
+          "charge": "Grand Theft",
+          "caseNumber": "XM-520"
+        },
+        {
+          "charge": "Intelligence Breach",
+          "caseNumber": "XM-530"
+        }
+      ],
       "caseFiles": [
         {
           "title": "Ashen Gala Heist",
@@ -208,7 +311,8 @@
           "time": "11:48 PM",
           "witnesses": "Multiple gala attendees",
           "stolenObjects": "A collection of ceremonial musical instruments",
-          "image": "../images/selene/caseFileOne.png",
+          "incidentSummary": "During a high-profile gala, multiple ceremonial instruments were stolen amid widespread sensory disruption. Witnesses reported haunting audio distortions, consistent with Selene’s signature use of sound-based manipulation.",
+          "image": "caseFileOne",
           "evidence": [
             "Residual sonic anomalies detected",
             "Security footage shows shadowy figure slipping between guests",
@@ -217,9 +321,20 @@
           "investigatorNotes": [
             "Targeted high-value ceremonial instruments",
             "Operates with precise timing",
-            "Evidence indicates she may be aware of Kael’s intel operations"
+            "Evidence indicates she may be aware of Kaelâ€™s intel operations"
           ],
-          "relatedIncidents": ["Halcyon Vault Compromise", "Seraphine’s Diversion Coordination"]
+          "relatedIncidents": [
+            {
+              "incidentName": "Halcyon Vault Compromise",
+              "relatedCharacter": "kael-nightshade",
+              "caseNumber": "XM-501"
+            },
+            {
+              "incidentName": "Seraphine's Diversion Coordination",
+              "relatedCharacter": "kael-nightshade",
+              "caseNumber": "XM-503"
+            }
+          ]
         },
         {
           "title": "Lunaris Night Market Interference",
@@ -230,18 +345,30 @@
           "time": "10:22 PM",
           "witnesses": "Market vendors reported strange sounds and flickering shadows",
           "stolenObjects": "Several rare gemstones",
-          "image": "../images/selene/caseFileTwo.png",
+          "incidentSummary": "A coordinated disturbance involving sonic anomalies and visual confusion allowed for the theft of rare gemstones. Evidence suggests possible overlap with Lyra Moonshard’s activity, though intent remains unclear.",
+          "image": "caseFileTwo",
           "evidence": [
             "Sonic disruptions caused temporary panic",
             "Trace residues of phosphorescent dust",
             "Patterns suggest diversion coordinated with another actor (Lyra)"
           ],
           "investigatorNotes": [
-            "Operates independently, but links to Lyra’s heists are suspected",
+            "Operates independently, but links to Lyraâ€™s heists are suspected",
             "Expert in psychological and sensory manipulation",
             "Avoids leaving traditional forensic evidence"
           ],
-          "relatedIncidents": ["Silver Market Disappearance", "Moonlit Vault Breach"]
+          "relatedIncidents": [
+            {
+              "incidentName": "Silver Market Disappearance",
+              "relatedCharacter": "lyra-moonshard",
+              "caseNumber": "XM-305"
+            },
+            {
+              "incidentName": "Moonlit Vault Breach",
+              "relatedCharacter": "lyra-moonshard",
+              "caseNumber": "XM-301"
+            }
+          ]
         },
         {
           "title": "Kael Intelligence Breach",
@@ -252,18 +379,30 @@
           "time": "01:05 AM",
           "witnesses": "Internal network logs only",
           "stolenObjects": "Confidential heist schedules",
-          "image": "../images/selene/caseFileThree.png",
+          "incidentSummary": "Sensitive heist data was extracted from secured systems, likely targeting Kael Nightshade’s network. The breach indicates a strategic effort to intercept or undermine his operations rather than conduct a standard theft.",
+          "image": "caseFileThree",
           "evidence": [
             "Compromised communication channels",
             "Evidence of coordination with Lyra",
-            "Encrypted messages traced back to Selene’s network"
+            "Encrypted messages traced back to Seleneâ€™s network"
           ],
           "investigatorNotes": [
-            "Likely working to intercept Kael’s intel",
+            "Likely working to intercept Kaelâ€™s intel",
             "Operates with extreme stealth and precision",
             "Ties to previous heists indicate long-term planning"
           ],
-          "relatedIncidents": ["Lyra Network Interception", "Halcyon Vault Compromise"]
+          "relatedIncidents": [
+            {
+              "incidentName": "Lyra Network Interception",
+              "relatedCharacter": "kael-nightshade",
+              "caseNumber": "XM-510"
+            },
+            {
+              "incidentName": "Halcyon Vault Compromise",
+              "relatedCharacter": "kael-nightshade",
+              "caseNumber": "XM-501"
+            }
+          ]
         }
       ],
       "threat": "3",
@@ -271,6 +410,583 @@
       "status": "mostWanted",
       "statusLabel": "Most wanted",
       "search": "selene darkveil the midnight siren"
+    }, 
+    {
+      "id": "seraphine-emberveil",
+      "name": "Seraphine Emberveil",
+      "alias": "The Cinder Duchess",
+      "age": 32,
+      "height": "5'9\"",
+      "weight": "140 lbs",
+      "description": "A charismatic fire mage who commands underground smuggling rings. Her temper is as infamous as her magic, and entire warehouses have been reduced to ash when negotiations failed.",
+      "knownAssociates": ["Lyra Moonshard", "REDACTED"],
+      "criminalRecord": [
+        {
+          "charge": "Arson",
+          "caseNumber": "XM-284"
+        },
+        {
+          "charge": "Destruction of Property",
+          "caseNumber": "XM-309"
+        }
+      ],
+      "caseFiles": [
+        {
+          "title": "Dockside Cinder Event",
+          "caseNumber": "XM-284",
+          "status": "CLOSED",
+          "date": "10/12/25",
+          "location": "Virex Shipping Docks",
+          "time": "02:18 AM",
+          "witnesses": "4 dock workers",
+          "stolenObjects": "A reinforced cargo container registered under private contract.",
+          "incidentSummary": "A controlled fire engulfed sections of the Virex docks, masking the extraction of a secured cargo container. Despite extensive damage, the burn pattern suggests deliberate containment and precision.",
+          "image": "caseFileOne",
+          "evidence": [
+            "Residual flame patterns forming controlled burn boundaries",
+            "Extreme heat concentration beyond natural thresholds",
+            "No ignition source identified"
+          ],
+          "investigatorNotes": [
+            "Fire spread avoided high-value shipments",
+            "Highly controlled destructive output"
+          ],
+          "relatedIncidents": [
+            {
+              "incidentName": "Ashen Archive Breach",
+              "relatedCharacter": "seraphine-emberveil",
+              "caseNumber": "XM-296"
+            }
+          ]
+        }, 
+        {
+          "title": "Ashen Archive Breach",
+          "caseNumber":
+          "XM-296",
+          "status": "ACTIVE",
+          "date": "10/28/25",
+          "location": "Halcyon Historical Repository",
+          "time": "03:11 AM",
+          "witnesses": "None",
+          "stolenObjects": "A sealed archival relic of unknown purpose.",
+          "incidentSummary": "An archival facility was infiltrated and partially burned to access a sealed relic. Fire appears to have been used tactically rather than destructively, indicating intentional targeting.",
+          "image": "caseFileTwo",
+          "evidence": [
+            "Localized burn radius with precise boundary control",
+            "Arcane residue consistent with flame manipulation",
+            "Suppression system interference"
+          ],
+          "investigatorNotes": [
+            "Selective targeting behavior",
+            "Deviation from typical arson patterns"
+          ],
+          "relatedIncidents": [
+            {
+              "incidentName": "Dockside Cinder Event",
+              "relatedCharacter": "seraphine-emberveil",
+              "caseNumber": "XM-284"
+            }
+          ]
+        }, 
+        {
+          "title": "Emberglass Cathedral Incident",
+          "caseNumber": "XM-309",
+          "status": "ACTIVE",
+          "date": "12/10/25",
+          "location": "Cathedral of Luminous Reflection",
+          "time": "01:57 AM",
+          "witnesses": "2 clergy",
+          "stolenObjects": "A fractured mirror shard embedded within altar structure.",
+          "incidentSummary": "A relic embedded within a cathedral structure was removed following a localized thermal anomaly. Evidence suggests interference from an external source, complicating attribution.",
+          "image": "caseFileThree",
+          "evidence": [
+            "Thermal inversion prior to ignition",
+            "Arcane interference patterns",
+            "Residual energy inconsistent with known profile"
+          ],
+          "investigatorNotes": [
+            "Fire used as secondary mechanism",
+            "Possible external interference"
+          ],
+          "relatedIncidents": [
+            {
+              "incidentName": "Ashen Archive Breach",
+              "relatedCharacter": "seraphine-emberveil",
+              "caseNumber": "XM-296"
+            },
+            {
+              "incidentName": "Silver Market Disappearance",
+              "relatedCharacter": "lyra-moonshard",
+              "caseNumber": "XM-305"
+            }
+          ]
+        },
+        {
+          "title": "Lunaris Counterstrike Event",
+          "caseNumber": "XM-313",
+          "status": "ACTIVE",
+          "date": "12/22/25",
+          "location": "Lunaris Royal Exhibition Hall",
+          "time": "03:04 AM",
+          "witnesses": "3 guards",
+          "stolenObjects": "None confirmed",
+          "incidentSummary": "An attempted operation at the exhibition hall was disrupted by overlapping arcane signatures. The event marks a confirmed interaction between Seraphine and Lyra, resulting in incomplete execution.",
+          "image": "caseFileFour",
+          "evidence": [
+            "Dual-signature interference (thermal + refractive)",
+            "Incomplete combustion pattern",
+            "Spatial distortion overlap"
+          ],
+          "investigatorNotes": [
+            "First confirmed interaction with Lyra Moonshard",
+            "Interrupted spellwork detected"
+          ],
+          "relatedIncidents": [
+            {
+              "incidentName": "Lunaris Jewel Heist",
+              "relatedCharacter": "lyra-moonshard",
+              "caseNumber": "XM-312"
+            }
+          ]
+        }
+      ],
+      "threat": "3",
+      "threatLabel": "Severe Threat",
+      "status": "mostWanted",
+      "statusLabel": "Most wanted",
+      "search": "seraphine emberveil the cinder duchess"
+    },
+    {
+      "id": "orion-vale",
+      "name": "Orion Vale",
+      "alias": "The Archivist",
+      "age": 41,
+      "height": "6'1\"",
+      "weight": "180 lbs",
+      "description": "A methodical data thief specializing in the extraction and alteration of historical and arcane records. Orion targets archives, repositories, and institutions of knowledge, often leaving no indication that data has been removed—only subtle inconsistencies in recorded history. Investigators suspect his activities may be altering timelines or concealing larger coordinated operations.",
+      "knownAssociates": ["Kael Nightshade", "REDACTED"],
+      "criminalRecord": [
+        {
+          "charge": "Data Manipulation",
+          "caseNumber": "XM-601"
+        },
+        {
+          "charge": "Unauthorized Archive Access",
+          "caseNumber": "XM-607"
+        }
+      ],
+      "caseFiles": [
+        {
+          "title": "Halcyon Archive Discrepancy",
+          "caseNumber": "XM-601",
+          "status": "ACTIVE",
+          "date": "01/18/26",
+          "location": "Halcyon Historical Repository",
+          "time": "03:33 AM",
+          "witnesses": "None",
+          "stolenObjects": "Unknown — multiple archival records show conflicting revisions.",
+          "incidentSummary": "Multiple archival records were altered without evidence of physical intrusion. The incident suggests deliberate manipulation of historical data rather than theft, with long-term implications for record integrity.",
+          "image": "caseFileOne",
+          "evidence": [
+            "Timestamp inconsistencies across archival entries",
+            "Partial digital overwrite signatures",
+            "No signs of forced access"
+          ],
+          "investigatorNotes": [
+            "Records appear altered rather than removed",
+            "Potential collaboration with external intelligence broker",
+            "Pattern suggests deliberate historical obfuscation"
+          ],
+          "relatedIncidents": [
+            {
+              "incidentName": "Ashen Archive Breach",
+              "relatedCharacter": "seraphine-emberveil",
+              "caseNumber": "XM-296"
+            }
+          ] 
+      },
+        {
+          "title": "Chronicle Vault Breach",
+          "caseNumber": "XM-607",
+          "status": "ACTIVE",
+          "date": "02/27/26",
+          "location": "Elaris Central Records Vault",
+          "time": "02:09 AM",
+          "witnesses": "Security logs only",
+          "stolenObjects": "Encrypted timeline registry fragments",
+          "image": "caseFileTwo",
+          "incidentSummary": "Encrypted timeline fragments were extracted from a secure records vault. Data fragmentation and routing patterns indicate coordination with external intelligence networks.",
+          "evidence": [
+            "Fragmented data trails leading to multiple endpoints",
+            "Encryption layers consistent with Kael Nightshade’s network",
+            "Minor temporal desynchronization detected in system logs"
+          ],
+          "investigatorNotes": [
+            "Strong correlation with known Shadow Broker infrastructure",
+            "Subject likely prioritizes information over physical assets",
+            "Potential link to broader coordinated data theft operations"
+          ],
+          "relatedIncidents": [
+            {
+              "incidentName": "Lyra Network Interception",
+              "relatedCharacter": "kael-nightshade",
+              "caseNumber": "XM-510"
+            },
+            {
+              "incidentName": "Halcyon Vault Compromise",
+              "relatedCharacter": "kael-nightshade",
+              "caseNumber": "XM-501"
+            }
+          ]
+        },
+        {
+          "title": "Silent Ledger Incident",
+          "caseNumber": "XM-612",
+          "status": "ACTIVE",
+          "date": "03/15/26",
+          "location": "Virex Financial Archive Division",
+          "time": "01:26 AM",
+          "witnesses": "One archivist (memory inconsistency reported)",
+          "stolenObjects": "Financial records tied to black-market transactions",
+          "incidentSummary": "Financial records tied to illicit operations were selectively erased. A witness reported memory inconsistencies, suggesting cognitive interference may be part of the subject’s methodology.",
+          "image": "caseFileThree",
+          "evidence": [
+            "Localized memory disruption in witness",
+            "Selective deletion of transaction logs",
+            "Residual arcane interference in storage systems"
+          ],
+          "investigatorNotes": [
+            "Subject may possess cognitive interference capabilities",
+            "Data removal appears highly selective",
+            "Possible attempt to erase traces of other operatives"
+          ],
+          "relatedIncidents": [
+            {
+              "incidentName": "Halcyon Archive Discrepancy",
+              "relatedCharacter": "orion-vale",
+              "caseNumber": "XM-601"
+            }
+          ]
+        }
+      ],
+      "threat": "2",
+      "threatLabel": "Moderate Risk",
+      "status": "underSurveillance",
+      "statusLabel": "Under surveillance",
+      "search": "orion vale the archivist data thief archive manipulation"
+    },
+    {
+      "id": "cassian-rhodes",
+      "name": "Cassian Rhodes",
+      "alias": "The Gray Phantom",
+      "age": 34,
+      "height": "5'11\"",
+      "weight": "165 lbs",
+      "description": "An elusive operative linked to multiple high-risk infiltration events across restricted facilities. Cassian demonstrates advanced tactical awareness and consistently avoids escalation, often leaving operations incomplete or disrupted rather than fully executed. His presence is frequently associated with compromised criminal activity rather than successful theft.",
+      "knownAssociates": ["Kael Nightshade", "REDACTED"],
+      "criminalRecord": [
+        {
+          "charge": "Unlawful Entry",
+          "caseNumber": "XM-701"
+        },
+        {
+          "charge": "Operational Interference",
+          "caseNumber": "XM-708"
+        }
+      ],
+      "caseFiles": [
+        {
+          "title": "Virex Dock Interception",
+          "caseNumber": "XM-701",
+          "status": "ACTIVE",
+          "date": "01/05/26",
+          "location": "Virex Shipping Docks",
+          "time": "02:11 AM",
+          "witnesses": "Two dock workers",
+          "stolenObjects": "None",
+          "incidentSummary": "The subject infiltrated an active smuggling site but did not remove any assets. Evidence suggests intentional disruption of another operative’s activity rather than participation in the crime.",
+          "image": "caseFileOne",
+          "evidence": [
+            "Security systems temporarily disabled without damage",
+            "Multiple contraband shipments left untouched",
+            "Unidentified figure observed leaving prior to incident escalation"
+          ],
+          "investigatorNotes": [
+            "Subject present but did not engage in theft",
+            "Timeline overlaps with Seraphine Emberveil activity",
+            "Possible interference with ongoing criminal operation"
+          ],
+          "relatedIncidents": [
+            {
+              "incidentName": "Dockside Cinder Event",
+              "relatedCharacter": "seraphine-emberveil",
+              "caseNumber": "XM-284"
+            }
+          ]
+        },
+        {
+          "title": "Halcyon Vault Disruption",
+          "caseNumber": "XM-708",
+          "status": "ACTIVE",
+          "date": "02/19/26",
+          "location": "Halcyon Central Bank",
+          "time": "01:02 AM",
+          "witnesses": "Security logs only",
+          "stolenObjects": "None",
+          "incidentSummary": "A vault breach was initiated but not completed. Security systems were reset, preventing a larger compromise. The subject’s actions appear to have mitigated damage rather than caused it.",
+          "image": "caseFileTwo",
+          "evidence": [
+            "Vault access triggered but no assets removed",
+            "Security protocols reset remotely",
+            "Trace signature inconsistent with known offenders"
+          ],
+          "investigatorNotes": [
+            "Incident prevented a larger breach event",
+            "Potential overlap with Kael Nightshade network activity",
+            "Subject actions reduced overall damage"
+          ],
+          "relatedIncidents": [
+            {
+              "incidentName": "Dockside Cinder Event",
+              "relatedCharacter": "seraphine-emberveil",
+              "caseNumber": "XM-284"
+            }
+          ]
+        },
+        {
+          "title": "Lunaris Signal Interference",
+          "caseNumber": "XM-715",
+          "status": "ACTIVE",
+          "date": "03/08/26",
+          "location": "Lunaris Royal Exhibition Hall",
+          "time": "03:06 AM",
+          "witnesses": "Three guards",
+          "stolenObjects": "None",
+          "incidentSummary": "Communication systems were disabled during a separate heist, allowing unknown parties to escape. The subject is believed to have facilitated the extraction without directly engaging.",
+          "image": "caseFileThree",
+          "evidence": [
+            "Communication disruption across all security channels",
+            "Arcane interference masking multiple presences",
+            "Exit vectors cleared prior to response arrival"
+          ],
+          "investigatorNotes": [
+            "Activity coincides with Lyra Moonshard’s extraction",
+            "Subject likely enabled escape conditions",
+            "Behavior suggests controlled intervention rather than participation"
+          ],
+          "relatedIncidents": [
+            {
+              "incidentName": "Dockside Cinder Event",
+              "relatedCharacter": "seraphine-emberveil",
+              "caseNumber": "XM-284"
+            }
+          ]
+        }
+      ],
+      "threat": "1",
+      "threatLabel": "Low Risk",
+      "status": "underSurveillance",
+      "statusLabel": "Under surveillance",
+      "search": "cassian rhodes gray phantom infiltration interference operative"
+    },
+    {
+      "id": "darius-vale",
+      "name": "Darius Vale",
+      "alias": "The Iron Warden",
+      "age": 41,
+      "height": "6'2\"",
+      "weight": "210 lbs",
+      "description": "A former enforcer turned rogue asset, Darius Vale is known for his ability to breach and dismantle fortified locations with methodical precision. Unlike other offenders, Vale exhibits disciplined, almost military execution patterns. He is currently held in a high-security containment facility following a coordinated capture operation, though concerns remain regarding his external connections and potential contingency planning.",
+      "knownAssociates": ["REDACTED", "Cassian Rhodes"],
+      "criminalRecord": [
+        {
+          "charge": "Aggravated Assault",
+          "caseNumber": "XM-820"
+        },
+        {
+          "charge": "Facility Breach",
+          "caseNumber": "XM-801"
+        }
+      ],
+      "caseFiles": [
+        {
+          "title": "Blackgate Containment Breach",
+          "caseNumber": "XM-801",
+          "status": "CLOSED",
+          "date": "09/18/25",
+          "location": "Blackgate Holding Facility",
+          "time": "01:33 AM",
+          "witnesses": "Five security personnel",
+          "stolenObjects": "None",
+          "incidentSummary": "The subject successfully breached a high-security facility using controlled force. Despite structural damage, the operation avoided unnecessary casualties, demonstrating disciplined execution.",
+          "image": "caseFileOne",
+          "evidence": [
+            "Reinforced barriers dismantled using non-explosive force",
+            "Security routes predicted and countered in advance",
+            "Minimal collateral damage despite structural compromise"
+          ],
+          "investigatorNotes": [
+            "Highly trained in tactical movement and suppression",
+            "Demonstrates knowledge of institutional layouts",
+            "Behavior suggests prior exposure to similar facilities"
+          ],
+          "relatedIncidents": [
+            {
+              "incidentName": "Iron Corridor Incident",
+              "relatedCharacter": "darius-vale",
+              "caseNumber": "XM-809"
+            }
+          ]
+        },
+        {
+          "title": "Iron Corridor Incident",
+          "caseNumber": "XM-809",
+          "status": "CLOSED",
+          "date": "11/07/25",
+          "location": "Halcyon Transit Authority – Restricted Sector",
+          "time": "02:26 AM",
+          "witnesses": "Transit security logs",
+          "stolenObjects": "Confidential transport schedules",
+          "incidentSummary": "Confidential transport data was extracted from a restricted transit sector. The breach exploited system vulnerabilities without triggering alarms, indicating advanced planning.",
+          "image": "caseFileTwo",
+          "evidence": [
+            "Access points opened without triggering alarms",
+            "Surveillance blind spots exploited with precision",
+            "Exit executed prior to automated lockdown"
+          ],
+          "investigatorNotes": [
+            "Objective-focused operation with no unnecessary movement",
+            "Subject avoided confrontation unless required",
+            "Patterns align with structured operational training"
+          ],
+          "relatedIncidents": [
+            {
+              "incidentName": "Iron Corridor Incident",
+              "relatedCharacter": "darius-vale",
+              "caseNumber": "XM-809"
+            }
+          ]
+        },
+        {
+          "title": "Vale Apprehension Operation",
+          "caseNumber": "XM-820",
+          "status": "CLOSED",
+          "date": "01/27/26",
+          "location": "Outer Halcyon Industrial Sector",
+          "time": "03:12 AM",
+          "witnesses": "ITAB tactical unit",
+          "stolenObjects": "N/A",
+          "incidentSummary": "A coordinated tactical operation resulted in the subject’s capture. Resistance was minimal, and behavior during apprehension suggests possible strategic compliance.",
+          "image": "caseFileThree",
+          "evidence": [
+            "Subject subdued following coordinated containment maneuver",
+            "Resistance measured and controlled",
+            "No attempt made to flee once perimeter was secured"
+          ],
+          "investigatorNotes": [
+            "Capture executed with minimal force escalation",
+            "Subject displayed awareness of tactical positioning",
+            "Unclear whether surrender was strategic or situational"
+          ],
+          "relatedIncidents": [
+            {
+              "incidentName": "Iron Corridor Incident",
+              "relatedCharacter": "darius-vale",
+              "caseNumber": "XM-809"
+            }
+          ]
+        }
+      ],
+      "threat": "2",
+      "threatLabel": "Moderate Risk",
+      "status": "captured",
+      "statusLabel": "Captured",
+      "search": "darius vale iron warden detained captured facility breach tactical operative"
+    },
+    {
+      "id": "marcellus-faye",
+      "name": "Marcellus Faye",
+      "alias": "The Crimson Vellum",
+      "age": 38,
+      "height": "5'10\"",
+      "weight": "160 lbs",
+      "description": "A master forger and manipulator of arcane contracts, Marcellus traffics in legal loopholes, forged documents, and falsified magical signatures. Operating in the shadows of both criminal and bureaucratic systems, he can turn official records into weapons or shields, often rewriting the rules to protect allies or sabotage enemies. While he rarely engages in direct theft or combat, his interventions have altered the outcomes of multiple high-profile operations.",
+      "knownAssociates": ["Kael Nightshade", "Orion Vale", "REDACTED"],
+      "criminalRecord": [
+        {
+          "charge": "Forgery of Magical Documents",
+          "caseNumber": "XM-901"
+        },
+        {
+          "charge": "Fraudulent Arcane Transactions",
+          "caseNumber": "XM-907"
+        }
+      ],
+      "caseFiles": [
+        {
+          "title": "Halcyon Registry Fabrication",
+          "caseNumber": "XM-901",
+          "status": "ACTIVE",
+          "date": "01/22/26",
+          "location": "Halcyon Central Registry",
+          "time": "02:03 AM",
+          "witnesses": "Registry clerks reported unusual document signatures",
+          "stolenObjects": "N/A — key official records altered",
+          "incidentSummary": "Official records were altered to benefit unknown parties without any physical theft. The operation relied on forged arcane signatures, effectively rewriting institutional data.",
+          "image": "caseFileOne",
+          "evidence": [
+            "Arcane signature inconsistent with original documentation",
+            "Trace glyph residues on parchment",
+            "Unauthorized magical authentication recorded"
+          ],
+          "investigatorNotes": [
+            "Records tampered with to favor unknown operatives",
+            "Operation executed without physical theft",
+            "Highly targeted alteration suggests prior knowledge of registry protocols"
+          ],
+          "relatedIncidents": [
+            {
+              "incidentName": "Chronicle Vault Breach",
+              "relatedCharacter": "orion-vale",
+              "caseNumber": "XM-607"
+            }
+          ]
+        },
+        {
+          "title": "Elaris Guild Charter Compromise",
+          "caseNumber": "XM-907",
+          "status": "ACTIVE",
+          "date": "02/15/26",
+          "location": "Elaris Guild Archives",
+          "time": "01:48 AM",
+          "witnesses": "One archivist (memory inconsistencies reported)",
+          "stolenObjects": "Altered charter documents and magical seals",
+          "incidentSummary": "Multiple guild documents and seals were falsified, potentially shifting organizational authority. Subtle distortions indicate manipulation at both legal and arcane levels.",
+          "image": "caseFileTwo",
+          "evidence": [
+            "Forgery of multiple guild seals",
+            "Subtle temporal distortions on charters",
+            "No forced entry detected"
+          ],
+          "investigatorNotes": [
+            "Subject likely aiming to manipulate guild authority",
+            "Possible indirect collaboration with Orion Vale and Kael Nightshade",
+            "Demonstrates knowledge of both arcane law and bureaucratic loopholes"
+          ],
+          "relatedIncidents": [
+            {
+              "incidentName": "Silent Ledger Incident",
+              "relatedCharacter": "orion-vale",
+              "caseNumber": "XM-612"
+            }
+          ]
+        }
+      ],
+      "threat": "2",
+      "threatLabel": "Moderate Risk",
+      "status": "underSurveillance",
+      "statusLabel": "Under surveillance",
+      "search": "marcellus faye crimson vellum forgery arcane manipulation"
     }
   ]
 }

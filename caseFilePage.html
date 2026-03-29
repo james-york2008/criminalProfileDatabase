@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="src/global/base.css">
+    <link rel="stylesheet" type="text/css" href="src/global/navbar.css">
+    <link rel="stylesheet" type="text/css" href="src/caseFiles/caseFileHeader.css">
+    <link rel="stylesheet" type="text/css" href="src/caseFiles/caseFile.css">
+    <link rel="stylesheet" type="text/css" href="src/global/footer.css">
+</head>
+<body>
+    <main>
+        <header id="home">
+            <div class="blueBackground">
+                <nav>
+                    <div id="titleWrapper">
+                        <a href="../../index.html"><img src="../../images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo" class="itabLogo" loading="lazy"></a>
+                        <h1>Interdimensional Threat Analysis Bureau</h1>
+                        <button id="dropdownButton" type="button" aria-expanded="false" aria-controls="navList">☰</button>
+                        <ul id="desktopNavList">
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="#caseFile">File</a></li>
+                            <li><a href="#legal">Legal</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="d-none" id="navList">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="#caseFile">File</a></li>
+                        <li><a href="#legal">Legal</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="metadata">
+            <h2 id="caseName"></h2>
+            <ul id="metaDataList">
+                
+            </ul>
+        </section>
+    
+        <div id="lg-flex"> <!--992px display flex-->
+            <section id="caseFileHeader">
+                <figure>
+                    <img id="caseFileImage">
+                </figure>
+
+                <ul id="eventInfo">
+                
+                </ul>
+            </section>
+
+            <section id="stolenObjects">
+                <h2 class="sectionTitle">STOLEN OBJECT</h2>
+                <p class="sectionDescription" id="objectDescription">
+
+                </p>
+            </section>
+        </div>
+
+        <section id="incidentSummary">
+            <h2 class="sectionTitle">INCIDENT SUMMARY</h2>
+            <p class="sectionDescription" id="incidentSummaryText"></p>
+        </section>
+
+
+        <section id="evidence">
+            <h2 class="sectionTitle">KEY EVIDENCE</h2>
+            <ul id="keyEvidenceList">
+            
+            </ul>
+        </section>
+
+        <section id="notes">
+            <h2 class="sectionTitle">INVESTIGATOR NOTES</h2>
+            <ul id="investigatorNotesList">
+
+            </ul>
+        </section>
+
+        <section id="relatedIncidents">
+            <h2 class="sectionTitle">RELATED INCIDENTS</h2>
+            <ul class="sectionDescription" id="relatedIncidentsList">
+                
+            </ul>
+        </section>
+    
+    </main>
+    <footer id="legal">
+        <a href="#" class="footerLinks">PRIVACY POLICY</a>
+        <a href="" id="backToProfile" class="footerLinks">BACK TO PROFILE</a>
+        <a href="#home" class="footerLinks">BACK TO TOP</a>
+
+        <p><small id="copyrightTag">&copy; iTab 2026</small></p>
+    </footer>
+    
+    <script src="src/global/hamburgerMenu.js"></script>
+    <script type="module" src="src/caseFiles/caseFilePage.js"></script>
+</body>
+</html>
