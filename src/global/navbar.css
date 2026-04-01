@@ -41,9 +41,11 @@
 #navList {
     list-style: none;
     text-align: center;
-    background-color: white;
+    background-color: #f4f1e8;
     overflow: hidden;
     transition: 0.5s all ease;
+    margin: 0;
+    padding: 0;
 }
 
 #desktopNavList {
@@ -57,6 +59,7 @@
     padding: 1rem;
     border-top: 2px solid rgb(0, 0, 0, 0.1);
     text-decoration: none;
+    
 }
 
 @media (min-width: 540px) {
