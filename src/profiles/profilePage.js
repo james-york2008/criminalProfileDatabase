@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', async() => {
             const article = document.createElement('article')
 
             article.innerHTML = `
-            <a href="caseFilePage.html?id=${character.id}&case=${caseFile.caseNumber}">
+            <a href="caseFilePage.html?id=${character.id}&case=${caseFile.caseNumber}" aria-label="View the ${caseFile.title} case file">
                 <img src="images/${character.id}/${caseFile.caseNumber}.png" alt="${caseFile.title} case photo" loading="lazy">
                 <h3>${caseFile.title}</h3>
             </a>
