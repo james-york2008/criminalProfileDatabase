@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', async() => {
             <p>Alias: ${character.alias}</p>
             <p>Threat: ${character.threatLabel}</p>
             <p>Status: ${character.statusLabel}</p>
-            <a href="profilePage.html?id=${character.id}" class="button">View Full Report</a>`
+            <a href="profilePage.html?id=${character.id}" class="button" aria-label="View ${character.name}'s full profile">View Full Report</a>`
             
             container.append(article)
         })
