@@ -85,8 +85,8 @@ document.addEventListener('DOMContentLoaded', async() => {
     btn.addEventListener('click', () => {
         btn.classList.toggle('expanded')
         btn.classList.contains('expanded')  
-        ? btn.textContent = 'See fewer characters' 
-        : btn.textContent = 'See more characters'
+        ? btn.textContent = 'Hide Extra Profiles' 
+        : btn.textContent = 'Load More Profiles'
 
         btn.classList.toggle('expandedSeeMoreCharacters')
 

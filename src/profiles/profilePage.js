@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', async() => {
     }, true)
 
     function renderCharacter(character) {
-        document.title = `${character.name}`
+        document.title = `${character.name} | ITAB Database`
 
         document.getElementById('profileName').textContent = character.name
 
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', async() => {
             const article = document.createElement('article')
 
             article.innerHTML = `
-            <a href="caseFilePage.html?id=${character.id}&case=${caseFile.caseNumber}" aria-label="View the ${caseFile.title} case file">
+            <a href="caseFilePage.html?id=${character.id}&case=${caseFile.caseNumber}">
                 <img src="images/${character.id}/${caseFile.caseNumber}.png" alt="${caseFile.title} case photo" loading="lazy">
                 <h3>${caseFile.title}</h3>
             </a>
