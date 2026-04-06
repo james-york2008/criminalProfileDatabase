@@ -899,8 +899,8 @@
       ],
       "threat": "2",
       "threatLabel": "Moderate Risk",
-      "status": "captured",
-      "statusLabel": "Captured",
+      "status": "inCustody",
+      "statusLabel": "In custody",
       "search": "darius vale iron warden detained captured facility breach tactical operative"
     },
     {

@@ -19,7 +19,7 @@
                     <div id="titleWrapper">
                         <a href="index.html"><img src="images/itab-logo.png" alt="Interdimensional Threat Analysis Bureau logo" class="itabLogo" loading="lazy"></a>
                         <h1>Interdimensional Threat Analysis Bureau</h1>
-                        <button id="dropdownButton" type="button" aria-expanded="false" aria-controls="navList">☰</button>
+                        <button id="dropdownButton" type="button" aria-expanded="false" aria-controls="navList">&#9776</button>
                         <ul id="desktopNavList">
                             <li><a href="#home">Home</a></li>
                             <li><a href="#criminalProfiles">Cases</a></li>
@@ -37,7 +37,7 @@
         </header>
 
         <section id="criminalProfiles">
-            <h2>Criminal Profiles</h2>
+            <h2>Criminal Intelligence Profiles</h2>
             <form id="searchBar">
                 <label id="searchProfilesLabel" for="searchInput">Search Profiles</label>
                 <input id="searchInput" name="search" placeholder="Search by name, or alias" type="text">
@@ -48,13 +48,13 @@
                         <option value="all">All threat levels</option>
                         <option value="1">Low risk</option>
                         <option value="2">Moderate risk</option>
-                        <option value="3">Severe threat</option>
+                        <option value="3">High risk</option>
                     </select>
 
                     <select name="status" id="status">
                         <option value="all">All status</option>
                         <option value="mostWanted">Most wanted</option>
-                        <option value="captured">Captured</option>
+                        <option value="captured">In custody</option>
                         <option value="underSurveillance">Under surveillance</option>
                     </select>
                 </fieldset>
@@ -63,7 +63,7 @@
             <div id="profileCards">
                 
             </div>
-            <button type="button" id="seeMoreCharacters">See more Characters</button>
+            <button type="button" id="seeMoreCharacters">Load More Profiles</button>
         </section>
     </main>
 
