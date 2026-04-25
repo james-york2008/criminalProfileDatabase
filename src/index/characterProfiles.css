@@ -1,20 +1,49 @@
 .profileImage {
-    width: 90%;
+    max-height: 10rem;
     border-radius: 10px;
+    margin-top: 6rem;
 }
 
 .profileCard {
-    max-width: 50%;
+    max-width: 20rem;
     margin-bottom: 2.5rem;
+    border-radius: 50px;
+    background-color: rgba(235, 228, 210, 0.8);
+    padding: 0 1rem 3.5rem;
+    display: flex;
+    position: relative;
+}
+
+.profileCard div {
+    display: block;
+    padding: 1rem;
+    padding-top: 0;
+    margin-top: 3rem;
+    text-align: start;
+}
+
+.button {
+    position: absolute;
+    top: 260px;
+    left: 60px;
+}
+
+.profileCard div h3 {
+    text-align: center;
+}
+
+.profileCard div .button {
+    display: block;
+    margin: 1rem;
 }
 
 #profileCards {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 1rem;
-    gap: 2rem;
     justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 #profileCards .button {
@@ -23,6 +52,7 @@
 
 #profileCards h3 {
     font-size: 1.5rem;
+    margin: 0.3rem;
 }
 
 .hidden {
@@ -44,20 +74,15 @@
 @media (min-width: 540px) {
     #profileCards {
         flex-direction: row;
-        margin-top: 2rem;
         flex-wrap: wrap;
-    }
-
-    .profileImage {
-        width: 50%;
-    }
-
-    .profileCard {
-        width: 30%;
     }
 
     #seeMoreCharacters {
         padding: 0.5rem 3rem;
         cursor: pointer;
+    }
+
+    .profileImage {
+        margin-top: 3.3rem;
     }
 }
